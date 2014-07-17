@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_LrYL8S19EeGnpqOpZuWPOw" name="model">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_jKR_AC2AEeGnpqOpZuWPOw" name="Activity0"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RqFpQC2BEeGnpqOpZuWPOw" name="Node" clientDependency="_pjjRYC2EEeGnpqOpZuWPOw">
+    <ownedAttribute xmi:id="_3VcbUC2BEeGnpqOpZuWPOw" name="name" visibility="private" type="_0l85wC2CEeGnpqOpZuWPOw"/>
+    <ownedAttribute xmi:id="_m6YsMC2DEeGnpqOpZuWPOw" name="color" visibility="private" type="_Eb9wMC2DEeGnpqOpZuWPOw"/>
+    <ownedAttribute xmi:id="_nTDD0C2DEeGnpqOpZuWPOw" name="Property1"/>
+    <ownedOperation xmi:id="_FhKTIC2CEeGnpqOpZuWPOw" name="getNodeType: String" isQuery="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Tq64kC2BEeGnpqOpZuWPOw" name="Serializable"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_u5V8QC2CEeGnpqOpZuWPOw" name="InputNode"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_0l85wC2CEeGnpqOpZuWPOw" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_2gTtoC2CEeGnpqOpZuWPOw" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Eb9wMC2DEeGnpqOpZuWPOw" name="Color"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_kJcZIC2EEeGnpqOpZuWPOw" name="Serializable"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_pjjRYC2EEeGnpqOpZuWPOw" name="Realization0" supplier="_kJcZIC2EEeGnpqOpZuWPOw" client="_RqFpQC2BEeGnpqOpZuWPOw"/>
+</uml:Model>

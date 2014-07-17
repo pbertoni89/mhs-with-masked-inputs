@@ -1,0 +1,26 @@
+
+
+possibile spostare, cambiare attributi (colori,label) elementi grafici dello schema
+
+
+COSA SERIA: INSERIMENTO PICCOLO PANELLO EVENTI DOVE SON PRESENTATI I PROMPT O LO STATO DEL SISTEMA.
+
+all'inizio di una modifica del modello, forzare la selezione mouse alla sola vista modello, lanciando (o aspettando) il mouse entro essa.
+
+
+i nodi hanno diversa forma
+
+
+ci può essere un menù che contiene un item "preferenze" in cui si può cambiare i colori dei nodi
+oppure un file.ini in cui si caricano i nodi di default
+
+un menù opzioni in cui c'è una checkbox che dice "al momento dell'elaborazione il computer deve dividere i grafi disgiunti per velocizzare il processo???"
+
+Panello di informazione se il modello è corretto o con warning
+
+al posto dei 3 pulsanti di inserisci iungresso, uscita, azione, un JFrame a comparsa quando si preme il pulsante aggiungi nodo 
+
+
+il logpanel un giorno potrebbe essere al posto di un Label (dunque una sola riga) basato su più righe: in questo modo si potrebbeero avere messaggi d'errore più esplicativi!
+
+l'utente può scelgere di eliminare un nodo E ANCHE ELIMINARE UN FLUSSO

@@ -1,0 +1,11 @@
+JBUTTON_INSERISCINODO a implements rispostaspecifica{
+	...
+}
+
+a.addactionlistener()
+
+
+il disegno dice che ad ogni oggetto della GUI (il disegno utilizza il pannello del modelEditPanel ma ciò vale per altri oggetti user-interactive della GUI)
+è associato un particolare listener che ascolta unicamente quel particolare oggetto. Questi oggetti (nel disegno specificati dai dei cerchi ed etichettati come
+"esecutori risposta specifica del pulsate" implementano, di conseguenza, i listener particolari di ogni pulsante (in figura si cita solo l'ActionListner, ma il discorso
+è analogo per altri oggetti GUI). infine Ognuno di questi "esecutori" implementano anche l'interfaccia "ABILITA", probabilmente riferita alla risposta specifica che deve essere eseguita

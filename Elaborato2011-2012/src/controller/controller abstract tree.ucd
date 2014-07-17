@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="controller abstract tree" size="1028,1757" id="controller" metadata="uml2-1.0" initialized="true" zoom="0.75" tag="1000" key="32303037303533312D3130303020456C61626F7261746F323031312D323031322F70617472697A696F">
+  <children xsi:type="editmodel:InterfaceEditModel" name="SaveBoundController" location="810,749" size="227,107" id="controller/SaveBoundController" runTimeClassModel="saveHandler,toBeSavedWithSaveAs,filechooser">
+    <children xsi:type="editmodel:CompartmentEditModel" size="204,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="filechooser" id="controller/SaveBoundController#filechooser"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="saveHandler" id="controller/SaveBoundController#saveHandler"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="toBeSavedWithSaveAs" id="controller/SaveBoundController#toBeSavedWithSaveAs"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.3 //@children.9/@sourceConnections.1 //@children.5/@sourceConnections.0 //@children.4/@sourceConnections.0 //@children.10/@sourceConnections.0 //@children.7/@sourceConnections.1" name="NullStaticObjectException" location="765,165" size="207,85" id="controller/NullStaticObjectException" runTimeClassModel="NullStaticObjectException(),NullStaticObjectException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="152,36">
+      <children xsi:type="editmodel:MethodEditModel" name="NullStaticObjectException" id="controller/NullStaticObjectException#NullStaticObjectException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="NullStaticObjectException" id="controller/NullStaticObjectException#NullStaticObjectException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.1" name="ButtonHandlerController" location="104,885" size="196,29" id="controller/ButtonHandlerController" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="controller/AbstractButtonHandlerController&lt;-controller/ButtonHandlerController" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="72,-1" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,78" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.6/@sourceConnections.0" name="AbstractButtonHandlerController" location="361,690" size="247,157" id="controller/AbstractButtonHandlerController" runTimeClassModel="setIdle(),wireButton(Ljavax.swing.AbstractButton;),actionPerformed(Ljava.awt.event.ActionEvent;),EditingStateAction(Levent.numberevent.NumberEvent;),startStateAction(Levent.numberevent.NumberEvent;),idleStateAction(Levent.numberevent.NumberEvent;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,108">
+      <children xsi:type="editmodel:MethodEditModel" name="EditingStateAction" id="controller/AbstractButtonHandlerController#EditingStateAction(Levent.numberevent.NumberEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="controller/AbstractButtonHandlerController#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="idleStateAction" id="controller/AbstractButtonHandlerController#idleStateAction(Levent.numberevent.NumberEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setIdle" id="controller/AbstractButtonHandlerController#setIdle()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startStateAction" id="controller/AbstractButtonHandlerController#startStateAction(Levent.numberevent.NumberEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="wireButton" id="controller/AbstractButtonHandlerController#wireButton(Ljavax.swing.AbstractButton;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller/WarningUserController&lt;-controller/AbstractButtonHandlerController" source="//@children.3" target="//@children.9" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="107,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,67"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller/ActionPerformerController&lt;-controller/AbstractButtonHandlerController" source="//@children.3" target="//@children.5" targetEnd="//@children.3/@sourceConnections.1/@children.1" sourceEnd="//@children.3/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="211,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="58,81"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller/UserStateListener&lt;-controller/AbstractButtonHandlerController" source="//@children.3" target="//@children.8" targetEnd="//@children.3/@sourceConnections.2/@children.1" sourceEnd="//@children.3/@sourceConnections.2/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="247,8" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,162"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="controller/AbstractButtonHandlerController-Standard::Call->controller/NullStaticObjectException*controller/AbstractButtonHandlerController-Soyatec::Import->controller/NullStaticObjectException" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.3/@children.2" label="//@children.3/@sourceConnections.3/@children.0" sourceEnd="//@children.3/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="176,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="74,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.0" name="Controller" location="345,45" size="280,355" id="controller/Controller" runTimeClassModel="iDCONTROLLER_SAVEFILE,iDCONTROLLER_NEWFILE,iDCONTROLLER_INSERTACTIONNODE,setErrorConsole(Ltoolkit.StringPrintStream;),iDCONTROLLER_INSERTFLOW,iDCONTROLLER_SAVEASFILE,iDCONTROLLER_DELETENODE,iDCONTROLLER_EXECUTEMINIMALANALYSIS,id,iDCONTROLLER_OPENFILE,iDCONTROLLER_INSERTINPUTNODE,setModel(Lgraph.Model;),iDCONTROLLER_INSERTOUTPUTNODE,getId(),setApplication(Lgui.GUIApplication;),iDCONTROLLER_EXITPROGRAMFILE,setValidator(Lcontroller.validator.Validator;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="257,216">
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_DELETENODE" id="controller/Controller#iDCONTROLLER_DELETENODE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_EXECUTEMINIMALANALYSIS" id="controller/Controller#iDCONTROLLER_EXECUTEMINIMALANALYSIS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_EXITPROGRAMFILE" id="controller/Controller#iDCONTROLLER_EXITPROGRAMFILE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_INSERTACTIONNODE" id="controller/Controller#iDCONTROLLER_INSERTACTIONNODE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_INSERTFLOW" id="controller/Controller#iDCONTROLLER_INSERTFLOW"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_INSERTINPUTNODE" id="controller/Controller#iDCONTROLLER_INSERTINPUTNODE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_INSERTOUTPUTNODE" id="controller/Controller#iDCONTROLLER_INSERTOUTPUTNODE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_NEWFILE" id="controller/Controller#iDCONTROLLER_NEWFILE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_OPENFILE" id="controller/Controller#iDCONTROLLER_OPENFILE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_SAVEASFILE" id="controller/Controller#iDCONTROLLER_SAVEASFILE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDCONTROLLER_SAVEFILE" id="controller/Controller#iDCONTROLLER_SAVEFILE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="controller/Controller#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="108,90">
+      <children xsi:type="editmodel:MethodEditModel" name="getId" id="controller/Controller#getId()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setApplication" id="controller/Controller#setApplication(Lgui.GUIApplication;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setErrorConsole" id="controller/Controller#setErrorConsole(Ltoolkit.StringPrintStream;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setModel" id="controller/Controller#setModel(Lgraph.Model;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setValidator" id="controller/Controller#setValidator(Lcontroller.validator.Validator;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="controller/Controller-Standard::Send->controller/NullStaticObjectException*controller/Controller-Soyatec::Import->controller/NullStaticObjectException*controller/Controller-Standard::Instantiate->controller/NullStaticObjectException" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Send, Instantiate, Import»" size="127,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="280,162" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.1" name="ActionPerformerController" location="810,345" size="209,81" id="controller/ActionPerformerController" runTimeClassModel="actionOverseenPerformed(Ljava.awt.event.ActionEvent;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="157,18">
+      <children xsi:type="editmodel:MethodEditModel" name="actionOverseenPerformed" id="controller/ActionPerformerController#actionOverseenPerformed(Ljava.awt.event.ActionEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="controller/ActionPerformerController-Standard::Send->controller/NullStaticObjectException*controller/ActionPerformerController-Soyatec::Import->controller/NullStaticObjectException" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Send, Import»" size="72,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="80,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="125,85"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MenuItemHandlerController" location="690,895" size="218,103" id="controller/MenuItemHandlerController" runTimeClassModel="executeValidatedAction(),idleStateAction(Levent.numberevent.NumberEvent;),editStateAction(Levent.numberevent.NumberEvent;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="144,54">
+      <children xsi:type="editmodel:MethodEditModel" name="editStateAction" id="controller/MenuItemHandlerController#editStateAction(Levent.numberevent.NumberEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="executeValidatedAction" id="controller/MenuItemHandlerController#executeValidatedAction()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="idleStateAction" id="controller/MenuItemHandlerController#idleStateAction(Levent.numberevent.NumberEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="controller/AbstractButtonHandlerController&lt;-controller/MenuItemHandlerController" source="//@children.6" target="//@children.3" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,49" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="247,103" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="InsertNodeController" location="60,285" size="262,319" id="controller/InsertNodeController" runTimeClassModel="leftClickOperations(Ljava.awt.event.MouseEvent;),exitSpecificOperations(),mouseDragged(Ljava.awt.event.MouseEvent;),addingNodeList(Lgui.ObservationPanel;LNODETYPE;),actionOverseenPerformed(Ljava.awt.event.ActionEvent;),executeValidatedAction(),getErrorWarningOccured(Lgraph.comp.Node;Lgraph.comp.Node;),rightClickOperations(Ljava.awt.event.MouseEvent;),idleStateAction(Levent.numberevent.NumberEvent;),mousePressed(Ljava.awt.event.MouseEvent;),InsertNodeController(ILjava.lang.String;Ljava.awt.Dimension;),mouseDragged,mouseReleased(Ljava.awt.event.MouseEvent;),InsertNodeController(ILjava.lang.String;),insertNewNode(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="136,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="mouseDragged" id="controller/InsertNodeController#mouseDragged"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="157,252">
+      <children xsi:type="editmodel:MethodEditModel" name="InsertNodeController" id="controller/InsertNodeController#InsertNodeController(ILjava.lang.String;Ljava.awt.Dimension;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="InsertNodeController" id="controller/InsertNodeController#InsertNodeController(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="actionOverseenPerformed" id="controller/InsertNodeController#actionOverseenPerformed(Ljava.awt.event.ActionEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addingNodeList" id="controller/InsertNodeController#addingNodeList(Lgui.ObservationPanel;LNODETYPE;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="executeValidatedAction" id="controller/InsertNodeController#executeValidatedAction()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="exitSpecificOperations" id="controller/InsertNodeController#exitSpecificOperations()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getErrorWarningOccured" id="controller/InsertNodeController#getErrorWarningOccured(Lgraph.comp.Node;Lgraph.comp.Node;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="idleStateAction" id="controller/InsertNodeController#idleStateAction(Levent.numberevent.NumberEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="insertNewNode" id="controller/InsertNodeController#insertNewNode(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="leftClickOperations" id="controller/InsertNodeController#leftClickOperations(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseDragged" id="controller/InsertNodeController#mouseDragged(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mousePressed" id="controller/InsertNodeController#mousePressed(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseReleased" id="controller/InsertNodeController#mouseReleased(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rightClickOperations" id="controller/InsertNodeController#rightClickOperations(Ljava.awt.event.MouseEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="controller/VisualGraphInteractorController&lt;-controller/InsertNodeController" source="//@children.7" target="//@children.10" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,319" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,40"/>
+      <bendpoints secondRelativeDimension="-42,2" firstRelativeDimension="2,62"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="controller/InsertNodeController-Standard::Call->controller/NullStaticObjectException*controller/InsertNodeController-Soyatec::Import->controller/NullStaticObjectException*controller/InsertNodeController-Standard::Send->controller/NullStaticObjectException" source="//@children.7" target="//@children.1" targetEnd="//@children.7/@sourceConnections.1/@children.2" label="//@children.7/@sourceConnections.1/@children.0" sourceEnd="//@children.7/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Send, Call, Import»" size="95,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="261,167" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,78"/>
+      <bendpoints secondRelativeDimension="-185,151" firstRelativeDimension="147,9"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.2" name="UserStateListener" location="825,536" size="154,171" id="controller/UserStateListener" runTimeClassModel="iDLE,sTART,EditingStateAction(Levent.numberevent.NumberEvent;),startStateAction(Levent.numberevent.NumberEvent;),idleStateAction(Levent.numberevent.NumberEvent;),eDITING">
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="eDITING" id="controller/UserStateListener#eDITING"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iDLE" id="controller/UserStateListener#iDLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sTART" id="controller/UserStateListener#sTART"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,54">
+      <children xsi:type="editmodel:MethodEditModel" name="EditingStateAction" id="controller/UserStateListener#EditingStateAction(Levent.numberevent.NumberEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="idleStateAction" id="controller/UserStateListener#idleStateAction(Levent.numberevent.NumberEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startStateAction" id="controller/UserStateListener#startStateAction(Levent.numberevent.NumberEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0" name="WarningUserController" location="375,470" size="187,67" id="controller/WarningUserController" runTimeClassModel="executeValidatedAction()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="144,18">
+      <children xsi:type="editmodel:MethodEditModel" name="executeValidatedAction" id="controller/WarningUserController#executeValidatedAction()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller/Controller&lt;-controller/WarningUserController" source="//@children.9" target="//@children.4" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="123,355"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="controller/WarningUserController-Standard::Send->controller/NullStaticObjectException*controller/WarningUserController-Soyatec::Import->controller/NullStaticObjectException" source="//@children.9" target="//@children.1" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Send, Import»" size="72,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="138,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="45,85"/>
+      <bendpoints secondRelativeDimension="-104,123" firstRelativeDimension="119,-42"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.0" name="VisualGraphInteractorController" location="195,644" size="244,175" id="controller/VisualGraphInteractorController" runTimeClassModel="getVirtualNode(Lorg.jgraph.graph.DefaultGraphCell;),leftClickOperations(Ljava.awt.event.MouseEvent;),mouseMoved(Ljava.awt.event.MouseEvent;),mouseEntered(Ljava.awt.event.MouseEvent;),mouseClicked(Ljava.awt.event.MouseEvent;),mouseExited(Ljava.awt.event.MouseEvent;),rightClickOperations(Ljava.awt.event.MouseEvent;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,126">
+      <children xsi:type="editmodel:MethodEditModel" name="getVirtualNode" id="controller/VisualGraphInteractorController#getVirtualNode(Lorg.jgraph.graph.DefaultGraphCell;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="leftClickOperations" id="controller/VisualGraphInteractorController#leftClickOperations(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseClicked" id="controller/VisualGraphInteractorController#mouseClicked(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseEntered" id="controller/VisualGraphInteractorController#mouseEntered(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseExited" id="controller/VisualGraphInteractorController#mouseExited(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseMoved" id="controller/VisualGraphInteractorController#mouseMoved(Ljava.awt.event.MouseEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rightClickOperations" id="controller/VisualGraphInteractorController#rightClickOperations(Ljava.awt.event.MouseEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="controller/VisualGraphInteractorController-Standard::Call->controller/NullStaticObjectException*controller/VisualGraphInteractorController-Soyatec::Import->controller/NullStaticObjectException*controller/VisualGraphInteractorController-Standard::Send->controller/NullStaticObjectException" source="//@children.10" target="//@children.1" targetEnd="//@children.10/@sourceConnections.0/@children.2" label="//@children.10/@sourceConnections.0/@children.0" sourceEnd="//@children.10/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Send, Call, Import»" size="95,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="213,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="58,85"/>
+      <bendpoints secondRelativeDimension="-165,242" firstRelativeDimension="146,-54"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="controller/ButtonHandlerController&lt;-controller/VisualGraphInteractorController" source="//@children.10" target="//@children.2" targetEnd="//@children.10/@sourceConnections.1/@children.1" sourceEnd="//@children.10/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,84" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="53,-1"/>
+      <bendpoints secondRelativeDimension="-21,-114" firstRelativeDimension="-17,3"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

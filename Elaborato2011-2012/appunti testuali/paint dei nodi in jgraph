@@ -1,0 +1,6 @@
+nel file MultiLineVertexRenderer.java si può trovare il codice che disegna 
+i nodi; può essere trovato in jgraph-5.13.0.0 Sources\com\jgraph\components\labels\MultiLineVertexRenderer.java
+
+
+PS: fare una ricerca in jgraph-5.13.0.0 Sources con la parola chiave "MultiLineVertexRenderer":
+in questo modo possiamo vedere dov'è che i nodi vengono effettivamente usati" :D

@@ -1,0 +1,15 @@
+CELL: è un edge oppure un vertex
+
+EDGE: è un flusso tra 2 vertici
+
+VERTEX: è un nodo di un grafo
+
+DEGREE: è il numero dei flussi di un nodo che soddisfano una particolare proprietà. per esempio:
+
+	INDEGREE: è il numero dei flussi in entrata in un nodo
+	OUTDEGREE: è il numero dei flussi in uscita da un nodo
+	
+LOOP: è la situazione in cui dato un vertice A si ha il flusso A->A. il LOOP quindi NON è' un grafo ciclico!
+
+MULTIPLE EDGES: è la situazione in cui dati 2 vertici ci sono più flussi tra di loro
+

@@ -1,0 +1,23 @@
+***************************** come funziona la nostra applicazione **************************************
+
+1) la applicazione parte da una classe main: essa contiene semplicemente un main
+2) il main fa partire una classe che verr� definita "inutile"
+3) la classe inutile genera tutti i vari controller
+4) la classe inutile genera lo schema
+5) la classe inutile genera il validator
+6) la classe inutile genera la GUIAPPLICATION a cui vengono passati tutti  i vari subcontroller (per gli actionlistener)
+7) la classe inutile imposta come attributo statico di Controller lo schema
+8) la classe inutile imposta come attributo statico di Controller il validator
+9) la classe inutile imposta come attributo statico di Controller la GUIAPPLICATION
+7) la classe inutile usa il GUIAPPLICATION.setvisible(true);
+
+ora:
+quando l'utente schiaccia un pulsante il subcontroller relativo si attiva ed esegue il codice in actionperformed
+ora se ha bisogno dello schema vero egli ce l'ha perche' e' un attributo statico dei Controller (idem per la GUIAPLICATION eccetera)
+
+
+DOMANDA: CHI e' LA CLASSE INUTILE???? e' IL MAIN STESSO!!!
+
+***********************************l'albero dei controller ********************************
+
+gli actionListener sono in fondo all'albero gerarchico

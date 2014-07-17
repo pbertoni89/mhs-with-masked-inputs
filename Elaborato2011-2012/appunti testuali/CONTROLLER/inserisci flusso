@@ -1,0 +1,9 @@
+come faccio  ad inserire un flusso?
+
+questa è tutta una mia teoria!
+
+il modo migliore è partire con il creare una classe figlia di Graph: in questa classe figlia
+devi creare il metodo createFlow: questo metodo puoi vederlo nel tutorial di JGraph che ho messo
+in JGraph World sotto il paragrafo "inserting a edge into the Model": se ti stai chiedendo cosa
+sia il UserObject vai a vedere il paragrafo "inserting a vertex in the Model"; credo
+che nel nostro caso lo userObject è Flow: 

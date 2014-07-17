@@ -1,0 +1,16 @@
+come facciamo a dire se, in caso di salvataggio, si deve eseguire la
+routine Save piuttsto che SaveAs???
+
+Semplice!
+
+Il controller di salvataggio hanno un particolare campo:
+
+boolean ismodified_or_new: TRUE se il grafo è stato modificato.
+
+SaveAsController e SaveController sono specificazioni di una Class Save che gestisce il salvataggio: quando qualcuno preme (in futuro)
+il Ctrl+S si scoprirà se il file andrà salvato As oppure semplicemente salvato! ;)
+
+//PAT
+Io opto per il salvataggio base.... un  file invisibile all'utente, mi sembra già abbastanza.
+senza contare che prevedo problemi nella migrazione a JAR... ma lasciamo stare.
+Save è veramente già sufficiente... dobbiamo limitarci.

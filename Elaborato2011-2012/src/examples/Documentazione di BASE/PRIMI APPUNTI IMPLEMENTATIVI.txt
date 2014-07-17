@@ -1,0 +1,22 @@
+
+la scelta implementativa per la DIVISIONE DEL MODELLO IN GRAFI (CONNESSI) è 
+
+
+durante la modifica considero tutto alla stregua di un unico oggetto ListenableDirectedGraph.
+Questo lo faccio principalmente per motivi di semplicità e prestazioni:
+-> semplicità in quanto avere una collezione di grafi disgiunti velocizza incredilmente i singoli grafi, ma nel momento
+in cui devo collegare 2 grafi disgiunti le operazioni da fare sono complesse e pesanti
+-> per prestazioni: se mai dovrò salvare, modificare, cancellare eccetera il grafico, farlo su un UNICO grande oggetto
+è molto più veloce che farlo su una collezione di grafi
+
+all'avvio della procedurona ELABORA, vengono riconosciute le eventuali disconessioni tra i grafi
+	vengono create delle strutture Subgraph per gestire in modo differenziato i grafi
+	in questo modo facilito tutte le operazioni successive e il mega algoritmo
+	
+
+PROBLEMA:
+Subgraph non esclude la presenza di grafi ciclici. Tuttavia questo non è un problema poiché abbiamo deciso che
+il grafo rimane unico finquando l'utente non preme il pulsante di ELABORA. In quel preciso istante le preondizioni ci garantiscono
+l'assenza di iclicità nel grafo in elaborazione.
+
+CONCLUSIONE: non dobbiamo implementare una estensione della classe di JGraphT Subgraph che non contiene ciclità!

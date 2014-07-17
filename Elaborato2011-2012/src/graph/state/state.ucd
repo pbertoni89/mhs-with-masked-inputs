@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="state" size="5132,1427" id="graph.state" metadata="uml2-1.0" initialized="true" scrolledX="3177" scrolledY="282" tag="1000" key="32303037303533312D3130303020456C61626F7261746F323031312D323031322F70617472697A696F">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0" name="ModelStateManager" location="3073,356" size="181,171" id="toolkit.modelstateevent/ModelStateManager" runTimeClassModel="ModelStateManager(),fireModelStateEvent(Ltoolkit.modelstateevent.ModelStateEvent;),removeAllListeners(),size(),removeModelStateListener(Ltoolkit.modelstateevent.ModelStateListener;),addModelStateListener(Ltoolkit.modelstateevent.ModelStateListener;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="158,108">
+      <children xsi:type="editmodel:MethodEditModel" name="ModelStateManager" id="toolkit.modelstateevent/ModelStateManager#ModelStateManager()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addModelStateListener" id="toolkit.modelstateevent/ModelStateManager#addModelStateListener(Ltoolkit.modelstateevent.ModelStateListener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="fireModelStateEvent" id="toolkit.modelstateevent/ModelStateManager#fireModelStateEvent(Ltoolkit.modelstateevent.ModelStateEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeAllListeners" id="toolkit.modelstateevent/ModelStateManager#removeAllListeners()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeModelStateListener" id="toolkit.modelstateevent/ModelStateManager#removeModelStateListener(Ltoolkit.modelstateevent.ModelStateListener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="size" id="toolkit.modelstateevent/ModelStateManager#size()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0" name="StatusLog" location="3585,1154" size="149,153" id="gui/StatusLog" runTimeClassModel="StatusLog(Ljava.lang.String;),ModelStateChanged(Ltoolkit.modelstateevent.ModelStateEvent;),StatusLog(),StatusLog(Ljava.awt.Color;),StatusLog(Ljava.awt.Color;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,90">
+      <children xsi:type="editmodel:MethodEditModel" name="ModelStateChanged" id="gui/StatusLog#ModelStateChanged(Ltoolkit.modelstateevent.ModelStateEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StatusLog" id="gui/StatusLog#StatusLog()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StatusLog" id="gui/StatusLog#StatusLog(Ljava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StatusLog" id="gui/StatusLog#StatusLog(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StatusLog" id="gui/StatusLog#StatusLog(Ljava.awt.Color;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="gui/StatusLog-Standard::Call->graph.state/ModelState" source="//@children.1" target="//@children.9" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="32,-1" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="30,168"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="gui/StatusLog-Standard::Call->toolkit.modelstateevent/ModelStateEvent" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="29,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,140" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="123,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.1 //@children.9/@sourceConnections.5 //@children.9/@sourceConnections.3 //@children.4/@sourceConnections.1 //@children.9/@sourceConnections.4" name="Model" location="3390,330" size="237,143" id="graph/Model" runTimeClassModel="eraseModel(),removeAllListeners(),errorModelState,modelState,correctModelState,addModelStateListener(Ltoolkit.modelstateevent.ModelStateListener;),Model(Lorg.jgrapht.DirectedGraph;),Model(Ljava.lang.Class;),clone(),copyModel(Lgraph.Model;),warningModelState,serialVersionUID,removeModelStateListener(Ltoolkit.modelstateevent.ModelStateListener;),modelstatemanager">
+    <children xsi:type="editmodel:CompartmentEditModel" size="214,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="correctModelState" id="graph.state/ModelState@correctModelState+graph/Model@|graph.state/ModelState#correctModelState"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="errorModelState" id="graph.state/ModelState@errorModelState+graph/Model@|graph.state/ModelState#errorModelState"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="modelState" id="graph.state/ModelState@modelState+graph/Model@|graph.state/ModelState#modelState"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="modelstatemanager" id="toolkit.modelstateevent/ModelStateManager@modelstatemanager+graph/Model@|toolkit.modelstateevent/ModelStateManager#modelstatemanager"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="warningModelState" id="graph.state/ModelState@warningModelState+graph/Model@|graph.state/ModelState#warningModelState"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="toolkit.modelstateevent/ModelStateManager@modelstatemanager+graph/Model@" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,84" id="toolkit.modelstateevent/ModelStateManager@modelstatemanager+graph/Model@|graph/Model#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="modelstatemanager" location="181,58" id="toolkit.modelstateevent/ModelStateManager@modelstatemanager+graph/Model@|toolkit.modelstateevent/ModelStateManager#modelstatemanager" multiplicityLabel="//@children.2/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - modelstatemanager" location="3261,393" size="104,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3261,421" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="graph/Model-Standard::Instantiate->toolkit.modelstateevent/ModelStateEvent" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate»" size="61,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="37,142" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="92,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="graph/Model@model+gui/GUIApplication@" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.2/@children.2" label="//@children.2/@sourceConnections.2/@children.0" sourceEnd="//@children.2/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="model" location="237,30" id="graph/Model@model+gui/GUIApplication@|graph/Model#model" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - model" location="3634,339" size="38,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3634,367" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,4" id="graph/Model@model+gui/GUIApplication@|gui/GUIApplication#" roleLabel="//@children.2/@sourceConnections.2/@children.2/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="4013,339" size="0,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="graph/Model-Standard::Instantiate->graph.state/CorrectModelState" source="//@children.2" target="//@children.8" targetEnd="//@children.2/@sourceConnections.3/@children.2" label="//@children.2/@sourceConnections.3/@children.0" sourceEnd="//@children.2/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate»" size="61,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="66,142" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="27,-2"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="graph/Model-Standard::Instantiate->graph.state/WarningModelState" source="//@children.2" target="//@children.6" targetEnd="//@children.2/@sourceConnections.4/@children.2" label="//@children.2/@sourceConnections.4/@children.0" sourceEnd="//@children.2/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate»" size="61,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="203,143" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="162,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="graph/Model-Standard::Instantiate->graph.state/ErrorModelState" source="//@children.2" target="//@children.7" targetEnd="//@children.2/@sourceConnections.5/@children.2" label="//@children.2/@sourceConnections.5/@children.0" sourceEnd="//@children.2/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate»" size="61,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="237,137" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,5"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.1 //@children.9/@sourceConnections.0 //@children.9/@sourceConnections.2 //@children.1/@sourceConnections.1" name="ModelStateEvent" location="3105,788" size="149,81" id="toolkit.modelstateevent/ModelStateEvent" runTimeClassModel="ModelStateEvent(Ljava.lang.Object;Lgraph.state.ModelState;Lgraph.state.ModelState;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="110,18">
+      <children xsi:type="editmodel:MethodEditModel" name="ModelStateEvent" id="toolkit.modelstateevent/ModelStateEvent#ModelStateEvent(Ljava.lang.Object;Lgraph.state.ModelState;Lgraph.state.ModelState;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.2" name="GUIApplication" location="4020,356" size="142,117" id="gui/GUIApplication" runTimeClassModel="setStatusLogState(Ljava.lang.String;Ljava.awt.Color;),GUIApplication(Ljava.lang.String;Lgraph.Model;Lcontroller.menubar.NewFileController;Lcontroller.menubar.OpenFileController;Lcontroller.menubar.SaveFileController;Lcontroller.menubar.SaveAsFileController;Lcontroller.menubar.ExitProgramController;Lcontroller.gui.InsertInputNodeController;Lcontroller.gui.InsertActionNodeController;Lcontroller.gui.InsertOutputNodeController;Lcontroller.gui.InsertFlowController;Lcontroller.gui.DeleteNodeController;Lcontroller.gui.ExecuteMinimalDiagnosisController;),addListeners(Lcontroller.menubar.NewFileController;Lcontroller.menubar.OpenFileController;Lcontroller.menubar.SaveFileController;Lcontroller.menubar.SaveAsFileController;Lcontroller.menubar.ExitProgramController;Lcontroller.gui.InsertInputNodeController;Lcontroller.gui.InsertActionNodeController;Lcontroller.gui.InsertOutputNodeController;Lcontroller.gui.InsertFlowController;Lcontroller.gui.DeleteNodeController;Lcontroller.gui.ExecuteMinimalDiagnosisController;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,54">
+      <children xsi:type="editmodel:MethodEditModel" name="setStatusLogState" id="gui/GUIApplication#setStatusLogState(Ljava.lang.String;Ljava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addListeners" id="gui/GUIApplication#addListeners(Lcontroller.menubar.NewFileController;Lcontroller.menubar.OpenFileController;Lcontroller.menubar.SaveFileController;Lcontroller.menubar.SaveAsFileController;Lcontroller.menubar.ExitProgramController;Lcontroller.gui.InsertInputNodeController;Lcontroller.gui.InsertActionNodeController;Lcontroller.gui.InsertOutputNodeController;Lcontroller.gui.InsertFlowController;Lcontroller.gui.DeleteNodeController;Lcontroller.gui.ExecuteMinimalDiagnosisController;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="GUIApplication" id="gui/GUIApplication#GUIApplication(Ljava.lang.String;Lgraph.Model;Lcontroller.menubar.NewFileController;Lcontroller.menubar.OpenFileController;Lcontroller.menubar.SaveFileController;Lcontroller.menubar.SaveAsFileController;Lcontroller.menubar.ExitProgramController;Lcontroller.gui.InsertInputNodeController;Lcontroller.gui.InsertActionNodeController;Lcontroller.gui.InsertOutputNodeController;Lcontroller.gui.InsertFlowController;Lcontroller.gui.DeleteNodeController;Lcontroller.gui.ExecuteMinimalDiagnosisController;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/RightPanel@rightpanel+gui/GUIApplication@" source="//@children.4" target="//@children.5" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="70,117" id="gui/RightPanel@rightpanel+gui/GUIApplication@|gui/GUIApplication#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="rightpanel" location="100,0" id="gui/RightPanel@rightpanel+gui/GUIApplication@|gui/RightPanel#rightpanel" multiplicityLabel="//@children.4/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + rightpanel" location="4097,1116" size="59,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="4065,1116" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="gui/GUIApplication-Standard::Call->graph/Model*gui/GUIApplication-Soyatec::Import->graph/Model" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,44" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="237,69"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="RightPanel" location="3990,1137" size="204,171" id="gui/RightPanel" runTimeClassModel="addListeners(Lcontroller.Controller;),executeMinimalDiagnosis,RightPanel(),getObservationPanel(),getExecutediagnosis(),getSerialversionuid(),scrollObservation,RightPanel(Lcontroller.Controller;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="181,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="executeMinimalDiagnosis" id="gui/RightPanel#executeMinimalDiagnosis"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="scrollObservation" id="gui/RightPanel#scrollObservation"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,108">
+      <children xsi:type="editmodel:MethodEditModel" name="addListeners" id="gui/RightPanel#addListeners(Lcontroller.Controller;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getObservationPanel" id="gui/RightPanel#getObservationPanel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="RightPanel" id="gui/RightPanel#RightPanel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="RightPanel" id="gui/RightPanel#RightPanel(Lcontroller.Controller;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/StatusLog@statuslog+gui/RightPanel@" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,93" id="gui/StatusLog@statuslog+gui/RightPanel@|gui/RightPanel#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="statuslog" location="149,76" id="gui/StatusLog@statuslog+gui/RightPanel@|gui/StatusLog#statuslog" multiplicityLabel="//@children.5/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - statuslog" location="3741,1209" size="54,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3741,1237" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.4" name="WarningModelState" location="3780,981" size="168,157" id="graph.state/WarningModelState" runTimeClassModel="wARNINGCOLOR,WarningModelState(),wARNINGSTATUS,grantAnalysisRights(),getStatus(),getStatusColor()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="141,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="wARNINGCOLOR" id="graph.state/WarningModelState#wARNINGCOLOR"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="wARNINGSTATUS" id="graph.state/WarningModelState#wARNINGSTATUS"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,72">
+      <children xsi:type="editmodel:MethodEditModel" name="getStatus" id="graph.state/WarningModelState#getStatus()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="grantAnalysisRights" id="graph.state/WarningModelState#grantAnalysisRights()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStatusColor" id="graph.state/WarningModelState#getStatusColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="WarningModelState" id="graph.state/WarningModelState#WarningModelState()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="graph.state/ModelState&lt;-graph.state/WarningModelState" source="//@children.6" target="//@children.9" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="84,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="75,169" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.5" name="ErrorModelState" location="3930,810" size="150,157" id="graph.state/ErrorModelState" runTimeClassModel="ErrorModelState(),grantAnalysisRights(),getStatus(),getStatusColor(),eRRORSTATUS,eRRORCOLOR">
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="eRRORSTATUS" id="graph.state/ErrorModelState#eRRORSTATUS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eRRORCOLOR" id="graph.state/ErrorModelState#eRRORCOLOR"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,72">
+      <children xsi:type="editmodel:MethodEditModel" name="getStatus" id="graph.state/ErrorModelState#getStatus()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="grantAnalysisRights" id="graph.state/ErrorModelState#grantAnalysisRights()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStatusColor" id="graph.state/ErrorModelState#getStatusColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ErrorModelState" id="graph.state/ErrorModelState#ErrorModelState()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="graph.state/ModelState&lt;-graph.state/ErrorModelState" source="//@children.7" target="//@children.9" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,97" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="100,169"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.3" name="CorrectModelState" location="3434,945" size="163,157" id="graph.state/CorrectModelState" runTimeClassModel="cORRECTSTATUS,CorrectModelState(),grantAnalysisRights(),getStatus(),cORRECTCOLOR,getStatusColor()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="140,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="cORRECTSTATUS" id="graph.state/CorrectModelState#cORRECTSTATUS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="cORRECTCOLOR" id="graph.state/CorrectModelState#cORRECTCOLOR"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,72">
+      <children xsi:type="editmodel:MethodEditModel" name="getStatus" id="graph.state/CorrectModelState#getStatus()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="grantAnalysisRights" id="graph.state/CorrectModelState#grantAnalysisRights()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="CorrectModelState" id="graph.state/CorrectModelState#CorrectModelState()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStatusColor" id="graph.state/CorrectModelState#getStatusColor()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="graph.state/ModelState&lt;-graph.state/CorrectModelState" source="//@children.8" target="//@children.9" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,35" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="52,169" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.6/@sourceConnections.0 //@children.1/@sourceConnections.0 //@children.8/@sourceConnections.0 //@children.7/@sourceConnections.0" name="ModelState" location="3594,700" size="150,169" id="graph.state/ModelState" runTimeClassModel="grantAnalysisRights(),getStatus(),getStatusColor()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getStatus" id="graph.state/ModelState#getStatus()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStatusColor" id="graph.state/ModelState#getStatusColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="grantAnalysisRights" id="graph.state/ModelState#grantAnalysisRights()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="graph.state/ModelState@fromState+toolkit.modelstateevent/ModelStateEvent@" source="//@children.9" target="//@children.3" targetEnd="//@children.9/@sourceConnections.0/@children.2" label="//@children.9/@sourceConnections.0/@children.0" sourceEnd="//@children.9/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="fromState" location="-1,156" id="graph.state/ModelState@fromState+toolkit.modelstateevent/ModelStateEvent@|graph.state/ModelState#fromState" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - fromState" location="3530,835" size="57,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3569,863" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="148,68" id="graph.state/ModelState@fromState+toolkit.modelstateevent/ModelStateEvent@|toolkit.modelstateevent/ModelStateEvent#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="graph.state/ModelState@correctModelState+graph/Model@" source="//@children.9" target="//@children.2" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="correctModelState" location="-1,48" id="graph.state/ModelState@correctModelState+graph/Model@|graph.state/ModelState#correctModelState" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - correctModelState" location="3489,755" size="98,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3569,727" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="116,141" id="graph.state/ModelState@correctModelState+graph/Model@|graph/Model#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="graph.state/ModelState@toState+toolkit.modelstateevent/ModelStateEvent@" source="//@children.9" target="//@children.3" targetEnd="//@children.9/@sourceConnections.2/@children.2" label="//@children.9/@sourceConnections.2/@children.0" sourceEnd="//@children.9/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="toState" location="-1,112" id="graph.state/ModelState@toState+toolkit.modelstateevent/ModelStateEvent@|graph.state/ModelState#toState" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - toState" location="3543,791" size="44,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3569,819" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="148,25" id="graph.state/ModelState@toState+toolkit.modelstateevent/ModelStateEvent@|toolkit.modelstateevent/ModelStateEvent#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="graph.state/ModelState@warningModelState+graph/Model@" source="//@children.9" target="//@children.2" targetEnd="//@children.9/@sourceConnections.3/@children.2" label="//@children.9/@sourceConnections.3/@children.0" sourceEnd="//@children.9/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="warningModelState" location="-1,7" id="graph.state/ModelState@warningModelState+graph/Model@|graph.state/ModelState#warningModelState" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - warningModelState" location="3484,714" size="103,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3569,686" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="186,142" id="graph.state/ModelState@warningModelState+graph/Model@|graph/Model#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="graph.state/ModelState@modelState+graph/Model@" source="//@children.9" target="//@children.2" targetEnd="//@children.9/@sourceConnections.4/@children.2" label="//@children.9/@sourceConnections.4/@children.0" sourceEnd="//@children.9/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="modelState" location="28,0" id="graph.state/ModelState@modelState+graph/Model@|graph.state/ModelState#modelState" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - modelState" location="3629,679" size="63,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3597,679" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="232,143" id="graph.state/ModelState@modelState+graph/Model@|graph/Model#" roleLabel="//@children.9/@sourceConnections.4/@children.2/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="3615,480" size="0,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="graph.state/ModelState@errorModelState+graph/Model@" source="//@children.9" target="//@children.2" targetEnd="//@children.9/@sourceConnections.5/@children.2" label="//@children.9/@sourceConnections.5/@children.0" sourceEnd="//@children.9/@sourceConnections.5/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="errorModelState" location="131,0" id="graph.state/ModelState@errorModelState+graph/Model@|graph.state/ModelState#errorModelState" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.5/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.5/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - errorModelState" location="3732,679" size="87,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="3700,679" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="234,94" id="graph.state/ModelState@errorModelState+graph/Model@|graph/Model#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

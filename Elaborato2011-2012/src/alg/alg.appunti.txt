@@ -1,0 +1,132 @@
+---Idee-Implementative---------------------------------------------------------
+----------------------------------------------------------------------------
+UNIONE DI DUE SET
+	Set<Node> ins1.addAll( Set<Node> ins2 ) 
+
+INTERSEZIONE DI DUE SET
+	Set<Node> ins1.retainAll( Set<Node> ins2 )
+
+---Algoritmo----------------------------------------------------------------
+----------------------------------------------------------------------------
+ok, ko e okm vengono ottenuti da Model, ma saranno in una classe di algorithm
+
+hittingSet     ( di una Collection di sets ) 
+	è un set che presenta un'intersezione NON vuota rispetto a tutti i 	set della collection data.
+
+hittingSetMin  ( di una collection di sets )
+	è un hitting set tale che nessun suo sottinsieme è hitting set.
+
+internalSubset ( di un OutputNode OK )
+	insieme di tutti i nodi da cui dipende l'OutputNode.
+
+structuralConflict ( di un OutputNode KO )
+	insieme di tutti i nodi da cui dipende l'OutputNode.
+
+structuralMaskedConflict ( di un OutputNode OKM )
+	insieme di tutti i nodi da cui dipende l'OutputNode.
+
+
+MinimalMaskedInputDiagnosis
+	set di InputNodes e di ActionNodes tali che:
+
+	1) calcola tutti gli #(ko+okm) set differenza
+
+		C_i = Ci \ (union IS )
+
+		CM_i = CMi \ ( union IS )
+
+		   Ci è structuralConflict dell' i-esimo OutputNode KO
+		   CMi è structuralMaskedConflict dell'iesimo OKM
+		   IS è un internalSubset di un OutputNode OK
+
+	2) per ogni j-esimo OutputNode = OKM, calcola
+		ALMENO UNA COPPIA di set non vuoti
+		
+		step2NonVoidDiffSet = step1DiffMaskSet_i \ step1DiffSet_i
+		step2NonVoidInterSet = step1DiffMaskSet_i (intersect) step1DiffSet_i
+		
+	3) generare hittingSetMin della Collection di tutti i set prodotti al punto 2)
+		
+-------------------------------------------------------------------------------------------MINIMAL HITTING SET ALG
+------------------------------------------------------------------------------------------------------------------
+i = 1 
+CICLO: Generare il sottoinsieme s_i (non vuoto e distinto rispetto a quelli già generati) degli M interi considerati 
+	   Controllare se |s_i è un HS																 
+	   				  |  (il vettore somma delle colonne corrispondenti a tutti gli elementi 	
+	   				  |  che appartengono a s_i non contiene alcuno 0);							
+					  |
+					  | Se sì, |Controllare, nell’elenco degli HS già trovati (inizialmente vuoto), 
+					  |		   |se esiste un HS h tale che h incluso in s_i
+					  |				| Se sì, s_i non è MHS. GOTO INC
+					  |				| Se no, |controllare nell'elenco degli HS già trovati
+					  |				| 		 |se esistono degli HS h_vect tali che s_i incluso in h_vect
+					  |				|			 | Se sì, sostituire cumulativamente nell'elenco degli HS tutti questi h con s_i,
+					  |				|			 |		 GOTO INC
+					  |				|			 | Se no, aggiungere s_i all'elenco degli HS
+ 				      | Se no, GOTO INC		
+INC: i++
+Se i <= 2^M-1
+	GOTO CICLO
+END
+ 			
+-------------------------------------------------------------------------------------------OTTIMIZZAZIONI---------
+------------------------------------------------------------------------------------------------------------------
+1,2)   Se il powerSet viene generato con cardinalità ascendente dei suoi elementi, 
+		la condizione s_i incluso in h è sempre falsa => gli HS inseriti SONO MHS.
+3)     Se un singoletto è HS, 
+		esso è MHS e nessun suo superinsieme è MHS   
+4)	   Se una collezione è di N insiemi, la cardinalità massima di un suo MHS è N
+		=> generare sottoinsiemi (aka elementi powerSet) degli M' rimasti di cardinalità >N è INUTILE			
+ 			
+ ----------------------------------------------------------------------------------------------------------------
+ diversità nell'algoritmo----------------------------------------------------------------------------------------
+ 
+ la generazione del powerSet (e il suo riordino per efficienza) avviene in modo atomico, quindi prima di ogni cosa.
+ 				      
+--------------------------------------------------------------------------------------------ALG V2.0-------------
+-----------------------------------------------------------------------------------------------------------------
+Generare tutti i sottoinsiemi singoletti degli M interi considerati; 
+salvare ogni singoletto che è HS, cioè la cui colonna non contiene alcuno 0, in una struttura distinta da quella degli HS), 
+sottrarre il singoletto dall’insieme degli M interi considerati e rimuovere tale colonna dalla matrice A.
+	<conviene rigenerare la matrice, eliminando l'elemento singleton da vectorColumns!>
+ 		
+i=1
+
+CICLO: Generare, secondo un ordine di cardinalità non decrescente, il sottoinsieme s_i (non vuoto e distinto rispetto a quelli già generati) 
+	   degli M’ interi rimasti, a partire dalla cardinalità 2.
+
+	   Controllare se s_i è un HS
+	   			se no, GOTO INC
+	   			se sì, controllare, nell’elenco degli HS già trovati, se esiste un HS h tale che h incluso in s_i; 
+	   					se sì, GOTO INC
+	   					se no, aggiungere s_i agli HS 
+INC: i++
+
+Se i <= 2^(M’)– M’–1, GOTO CICLO 
+	else, aggiungere all’elenco degli HS l’elenco dei singoletti HS (cioè step finale)
+	
+FINE
+
+Riscrittura---------------------------------------------------------------------------------ALG V2.0-------------
+-----------------------------------------------------------------------------------------------------------------
+Generare tutti i sottoinsiemi singoletti degli M interi considerati; 
+salvare ogni singoletto che è HS, cioè la cui colonna non contiene alcuno 0, in una struttura distinta da quella degli HS), 
+sottrarre il singoletto dall’insieme degli M interi considerati e rimuovere tale colonna dalla matrice A.
+	<conviene rigenerare la matrice, eliminando l'elemento singleton da vectorColumns!>
+ 		
+i=1
+
+CICLO: Generare, secondo un ordine di cardinalità non decrescente, il sottoinsieme s_i (non vuoto e distinto rispetto a quelli già generati) 
+	   degli M’ interi rimasti, a partire dalla cardinalità 2.
+
+	   Controllare se s_i è un HS
+	   			se sì, controllare, nell’elenco degli HS già trovati (non i singoletti, la nuova struttura)
+	   				   se esiste un HS h tale che h incluso in s_i; 
+	   						se no, aggiungere s_i agli HS 
+		INC: i++
+
+		Se i <= 2^(M’)– M’–1, GOTO CICLO 
+		se no, aggiungere all’elenco degli HS l’elenco dei singoletti HS (cioè step finale)
+	
+FINE
+ 				      	

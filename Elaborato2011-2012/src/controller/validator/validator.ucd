@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="validator" size="5124,691" id="controller.validator" metadata="uml2-1.0" initialized="true" zoom="0.5" scrolledY="77" tag="1000" key="32303037303533312D3130303020456C61626F7261746F323031312D323031322F70617472697A696F">
+  <children xsi:type="editmodel:ClassEditModel" name="ParametersRequiredMismatchException" location="1529,74" size="332,85" id="controller.validator/ParametersRequiredMismatchException" runTimeClassModel="ParametersRequiredMismatchException(Ljava.lang.String;),ParametersRequiredMismatchException()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="220,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ParametersRequiredMismatchException" id="controller.validator/ParametersRequiredMismatchException#ParametersRequiredMismatchException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ParametersRequiredMismatchException" id="controller.validator/ParametersRequiredMismatchException#ParametersRequiredMismatchException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Validator" location="128,65" size="145,85" id="controller.validator/Validator" runTimeClassModel="Validator(),ValidateUserAction(Ljava.util.List;Ltoolkit.UserAction;Lorg.jgrapht.DirectedGraph;[Z)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="122,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ValidateUserAction" id="controller.validator/Validator#ValidateUserAction(Ljava.util.List;Ltoolkit.UserAction;Lorg.jgrapht.DirectedGraph;[Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Validator" id="controller.validator/Validator#Validator()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ValidatorStateErrorManager" location="464,66" size="336,67" id="controller.validator/ValidatorStateErrorManager" runTimeClassModel="ValidatorStateErrorManager(ILjava.lang.Class;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="163,18">
+      <children xsi:type="editmodel:MethodEditModel" name="ValidatorStateErrorManager" id="controller.validator/ValidatorStateErrorManager#ValidatorStateErrorManager(ILjava.lang.Class;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorErrorManager&lt;-controller.validator/ValidatorStateErrorManager" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="336,33" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,55"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0" name="ValidatorErrorManager" location="969,44" size="273,103" id="controller.validator/ValidatorErrorManager" runTimeClassModel="ValidatorErrorManager(ILjava.lang.Class;),exceptionthrown,specificHandler(Lgraph.comp.Node;Lorg.jgrapht.DirectedGraph;Z)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="181,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="exceptionthrown" id="controller.validator/ValidatorErrorManager#exceptionthrown"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ValidatorErrorManager" id="controller.validator/ValidatorErrorManager#ValidatorErrorManager(ILjava.lang.Class;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="specificHandler" id="controller.validator/ValidatorErrorManager#specificHandler(Lgraph.comp.Node;Lorg.jgrapht.DirectedGraph;Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.0" name="ValidatorWarningException" location="675,779" size="246,67" id="controller.validator/ValidatorWarningException" runTimeClassModel="ValidatorWarningException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="159,18">
+      <children xsi:type="editmodel:MethodEditModel" name="ValidatorWarningException" id="controller.validator/ValidatorWarningException#ValidatorWarningException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorException&lt;-controller.validator/ValidatorWarningException" source="//@children.4" target="//@children.6" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="178,85" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="IngoingFlowInInputNodeException" location="1589,604" size="261,99" id="controller.validator.error/IngoingFlowInInputNodeException" runTimeClassModel="IngoingFlowInInputNodeException(),IngoingFlowInInputNodeException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="191,36">
+      <children xsi:type="editmodel:MethodEditModel" name="IngoingFlowInInputNodeException" id="controller.validator.error/IngoingFlowInInputNodeException#IngoingFlowInInputNodeException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="IngoingFlowInInputNodeException" id="controller.validator.error/IngoingFlowInInputNodeException#IngoingFlowInInputNodeException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorErrorException&lt;-controller.validator.error/IngoingFlowInInputNodeException" source="//@children.5" target="//@children.10/@sourceConnections.0" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="130,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.18/@sourceConnections.0" name="ValidatorException" location="107,648" size="188,85" id="controller.validator/ValidatorException" runTimeClassModel="equals(Ljava.lang.Object;),ValidatorException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ValidatorException" id="controller.validator/ValidatorException#ValidatorException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="controller.validator/ValidatorException#equals(Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="InputNodeLeadsToDirectOutputNodeException" location="1754,464" size="335,99" id="controller.validator.error/InputNodeLeadsToDirectOutputNodeException" runTimeClassModel="InputNodeLeadsToDirectOutputNodeException(Ljava.lang.String;),InputNodeLeadsToDirectOutputNodeException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="251,36">
+      <children xsi:type="editmodel:MethodEditModel" name="InputNodeLeadsToDirectOutputNodeException" id="controller.validator.error/InputNodeLeadsToDirectOutputNodeException#InputNodeLeadsToDirectOutputNodeException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="InputNodeLeadsToDirectOutputNodeException" id="controller.validator.error/InputNodeLeadsToDirectOutputNodeException#InputNodeLeadsToDirectOutputNodeException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorErrorException&lt;-controller.validator.error/InputNodeLeadsToDirectOutputNodeException" source="//@children.7" target="//@children.10/@sourceConnections.0" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="167,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OutgoingFlowFromActionNodeNotFoundException" location="415,902" size="361,99" id="controller.validator.warning/OutgoingFlowFromActionNodeNotFoundException" runTimeClassModel="OutgoingFlowFromActionNodeNotFoundException(),OutgoingFlowFromActionNodeNotFoundException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="270,36">
+      <children xsi:type="editmodel:MethodEditModel" name="OutgoingFlowFromActionNodeNotFoundException" id="controller.validator.warning/OutgoingFlowFromActionNodeNotFoundException#OutgoingFlowFromActionNodeNotFoundException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="OutgoingFlowFromActionNodeNotFoundException" id="controller.validator.warning/OutgoingFlowFromActionNodeNotFoundException#OutgoingFlowFromActionNodeNotFoundException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.12/@sourceConnections.0 //@children.19/@sourceConnections.0 //@children.14/@sourceConnections.0 //@children.11/@sourceConnections.0 //@children.16/@sourceConnections.0 //@children.15/@sourceConnections.0" autoLocated="true" id="controller.validator/ValidatorWarningException&lt;-controller.validator.warning/OutgoingFlowFromActionNodeNotFoundException" source="//@children.8" target="//@children.4" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="180,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,67" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MultipleIngoingFlowInActionNodeException" location="990,464" size="320,99" id="controller.validator.error/MultipleIngoingFlowInActionNodeException" runTimeClassModel="MultipleIngoingFlowInActionNodeException(),MultipleIngoingFlowInActionNodeException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="234,36">
+      <children xsi:type="editmodel:MethodEditModel" name="MultipleIngoingFlowInActionNodeException" id="controller.validator.error/MultipleIngoingFlowInActionNodeException#MultipleIngoingFlowInActionNodeException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="MultipleIngoingFlowInActionNodeException" id="controller.validator.error/MultipleIngoingFlowInActionNodeException#MultipleIngoingFlowInActionNodeException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorErrorException&lt;-controller.validator.error/MultipleIngoingFlowInActionNodeException" source="//@children.9" target="//@children.10/@sourceConnections.0" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="160,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PredecessorOfOutputNodeHasMultipleSuccessorsException" location="344,330" size="416,99" id="controller.validator.error/PredecessorOfOutputNodeHasMultipleSuccessorsException" runTimeClassModel="PredecessorOfOutputNodeHasMultipleSuccessorsException(),PredecessorOfOutputNodeHasMultipleSuccessorsException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="321,36">
+      <children xsi:type="editmodel:MethodEditModel" name="PredecessorOfOutputNodeHasMultipleSuccessorsException" id="controller.validator.error/PredecessorOfOutputNodeHasMultipleSuccessorsException#PredecessorOfOutputNodeHasMultipleSuccessorsException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="PredecessorOfOutputNodeHasMultipleSuccessorsException" id="controller.validator.error/PredecessorOfOutputNodeHasMultipleSuccessorsException#PredecessorOfOutputNodeHasMultipleSuccessorsException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.13/@sourceConnections.0 //@children.17/@sourceConnections.0 //@children.9/@sourceConnections.0 //@children.20/@sourceConnections.0 //@children.21/@sourceConnections.0 //@children.5/@sourceConnections.0 //@children.7/@sourceConnections.0" id="controller.validator/ValidatorErrorException&lt;-controller.validator.error/PredecessorOfOutputNodeHasMultipleSuccessorsException" source="//@children.10" target="//@children.18" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="416,50" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="105,67" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="IngoingFlowInOutputNodeNotFoundException" location="1209,928" size="332,99" id="controller.validator.warning/IngoingFlowInOutputNodeNotFoundException" runTimeClassModel="IngoingFlowInOutputNodeNotFoundException(),IngoingFlowInOutputNodeNotFoundException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="246,36">
+      <children xsi:type="editmodel:MethodEditModel" name="IngoingFlowInOutputNodeNotFoundException" id="controller.validator.warning/IngoingFlowInOutputNodeNotFoundException#IngoingFlowInOutputNodeNotFoundException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="IngoingFlowInOutputNodeNotFoundException" id="controller.validator.warning/IngoingFlowInOutputNodeNotFoundException#IngoingFlowInOutputNodeNotFoundException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorWarningException&lt;-controller.validator.warning/IngoingFlowInOutputNodeNotFoundException" source="//@children.11" target="//@children.8/@sourceConnections.0" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="166,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OutputNodeNotFoundException" location="660,1052" size="241,99" id="controller.validator.warning/OutputNodeNotFoundException" runTimeClassModel="OutputNodeNotFoundException(Ljava.lang.String;),OutputNodeNotFoundException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="180,36">
+      <children xsi:type="editmodel:MethodEditModel" name="OutputNodeNotFoundException" id="controller.validator.warning/OutputNodeNotFoundException#OutputNodeNotFoundException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="OutputNodeNotFoundException" id="controller.validator.warning/OutputNodeNotFoundException#OutputNodeNotFoundException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorWarningException&lt;-controller.validator.warning/OutputNodeNotFoundException" source="//@children.12" target="//@children.8/@sourceConnections.0" targetEnd="//@children.12/@sourceConnections.0/@children.1" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="120,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LoopDetectedInGraphException" location="660,464" size="244,99" id="controller.validator.error/LoopDetectedInGraphException" runTimeClassModel="LoopDetectedInGraphException(),LoopDetectedInGraphException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="182,36">
+      <children xsi:type="editmodel:MethodEditModel" name="LoopDetectedInGraphException" id="controller.validator.error/LoopDetectedInGraphException#LoopDetectedInGraphException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="LoopDetectedInGraphException" id="controller.validator.error/LoopDetectedInGraphException#LoopDetectedInGraphException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorErrorException&lt;-controller.validator.error/LoopDetectedInGraphException" source="//@children.13" target="//@children.10/@sourceConnections.0" targetEnd="//@children.13/@sourceConnections.0/@children.1" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="122,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ActionNodeNotFoundException" location="1060,1052" size="239,99" id="controller.validator.warning/ActionNodeNotFoundException" runTimeClassModel="ActionNodeNotFoundException(),ActionNodeNotFoundException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="178,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ActionNodeNotFoundException" id="controller.validator.warning/ActionNodeNotFoundException#ActionNodeNotFoundException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ActionNodeNotFoundException" id="controller.validator.warning/ActionNodeNotFoundException#ActionNodeNotFoundException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorWarningException&lt;-controller.validator.warning/ActionNodeNotFoundException" source="//@children.14" target="//@children.8/@sourceConnections.0" targetEnd="//@children.14/@sourceConnections.0/@children.1" sourceEnd="//@children.14/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="119,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="IngoingFlowInActionNodeNotFoundException" location="1420,1052" size="330,99" id="controller.validator.warning/IngoingFlowInActionNodeNotFoundException" runTimeClassModel="IngoingFlowInActionNodeNotFoundException(Ljava.lang.String;),IngoingFlowInActionNodeNotFoundException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="245,36">
+      <children xsi:type="editmodel:MethodEditModel" name="IngoingFlowInActionNodeNotFoundException" id="controller.validator.warning/IngoingFlowInActionNodeNotFoundException#IngoingFlowInActionNodeNotFoundException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="IngoingFlowInActionNodeNotFoundException" id="controller.validator.warning/IngoingFlowInActionNodeNotFoundException#IngoingFlowInActionNodeNotFoundException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorWarningException&lt;-controller.validator.warning/IngoingFlowInActionNodeNotFoundException" source="//@children.15" target="//@children.8/@sourceConnections.0" targetEnd="//@children.15/@sourceConnections.0/@children.1" sourceEnd="//@children.15/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="165,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="InputNodeNotFoundException" location="1659,932" size="231,99" id="controller.validator.warning/InputNodeNotFoundException" runTimeClassModel="InputNodeNotFoundException(),InputNodeNotFoundException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,36">
+      <children xsi:type="editmodel:MethodEditModel" name="InputNodeNotFoundException" id="controller.validator.warning/InputNodeNotFoundException#InputNodeNotFoundException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="InputNodeNotFoundException" id="controller.validator.warning/InputNodeNotFoundException#InputNodeNotFoundException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorWarningException&lt;-controller.validator.warning/InputNodeNotFoundException" source="//@children.16" target="//@children.8/@sourceConnections.0" targetEnd="//@children.16/@sourceConnections.0/@children.1" sourceEnd="//@children.16/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="115,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MultipleIngoingFlowInOutputNodeException" location="780,588" size="322,99" id="controller.validator.error/MultipleIngoingFlowInOutputNodeException" runTimeClassModel="MultipleIngoingFlowInOutputNodeException(Ljava.lang.String;),MultipleIngoingFlowInOutputNodeException()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="235,36">
+      <children xsi:type="editmodel:MethodEditModel" name="MultipleIngoingFlowInOutputNodeException" id="controller.validator.error/MultipleIngoingFlowInOutputNodeException#MultipleIngoingFlowInOutputNodeException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="MultipleIngoingFlowInOutputNodeException" id="controller.validator.error/MultipleIngoingFlowInOutputNodeException#MultipleIngoingFlowInOutputNodeException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorErrorException&lt;-controller.validator.error/MultipleIngoingFlowInOutputNodeException" source="//@children.17" target="//@children.10/@sourceConnections.0" targetEnd="//@children.17/@sourceConnections.0/@children.1" sourceEnd="//@children.17/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="161,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.0" name="ValidatorErrorException" location="1224,204" size="213,67" id="controller.validator/ValidatorErrorException" runTimeClassModel="ValidatorErrorException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="143,18">
+      <children xsi:type="editmodel:MethodEditModel" name="ValidatorErrorException" id="controller.validator/ValidatorErrorException#ValidatorErrorException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="controller.validator/ValidatorException&lt;-controller.validator/ValidatorErrorException" source="//@children.18" target="//@children.6" targetEnd="//@children.18/@sourceConnections.0/@children.1" sourceEnd="//@children.18/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,28" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="86,-2" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OutgoingFlowFromInputNodeNotFoundException" location="805,928" size="353,99" id="controller.validator.warning/OutgoingFlowFromInputNodeNotFoundException" runTimeClassModel="OutgoingFlowFromInputNodeNotFoundException(),OutgoingFlowFromInputNodeNotFoundException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="262,36">
+      <children xsi:type="editmodel:MethodEditModel" name="OutgoingFlowFromInputNodeNotFoundException" id="controller.validator.warning/OutgoingFlowFromInputNodeNotFoundException#OutgoingFlowFromInputNodeNotFoundException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="OutgoingFlowFromInputNodeNotFoundException" id="controller.validator.warning/OutgoingFlowFromInputNodeNotFoundException#OutgoingFlowFromInputNodeNotFoundException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorWarningException&lt;-controller.validator.warning/OutgoingFlowFromInputNodeNotFoundException" source="//@children.19" target="//@children.8/@sourceConnections.0" targetEnd="//@children.19/@sourceConnections.0/@children.1" sourceEnd="//@children.19/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="176,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OutgoingFlowFromOutputNodeException" location="1170,588" size="302,99" id="controller.validator.error/OutgoingFlowFromOutputNodeException" runTimeClassModel="OutgoingFlowFromOutputNodeException(),OutgoingFlowFromOutputNodeException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="225,36">
+      <children xsi:type="editmodel:MethodEditModel" name="OutgoingFlowFromOutputNodeException" id="controller.validator.error/OutgoingFlowFromOutputNodeException#OutgoingFlowFromOutputNodeException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="OutgoingFlowFromOutputNodeException" id="controller.validator.error/OutgoingFlowFromOutputNodeException#OutgoingFlowFromOutputNodeException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorErrorException&lt;-controller.validator.error/OutgoingFlowFromOutputNodeException" source="//@children.20" target="//@children.10/@sourceConnections.0" targetEnd="//@children.20/@sourceConnections.0/@children.1" sourceEnd="//@children.20/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="151,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MultitpleOutgoingFlowFromInputNodeException" location="1364,464" size="347,99" id="controller.validator.error/MultitpleOutgoingFlowFromInputNodeException" runTimeClassModel="MultitpleOutgoingFlowFromInputNodeException(),MultitpleOutgoingFlowFromInputNodeException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="254,36">
+      <children xsi:type="editmodel:MethodEditModel" name="MultitpleOutgoingFlowFromInputNodeException" id="controller.validator.error/MultitpleOutgoingFlowFromInputNodeException#MultitpleOutgoingFlowFromInputNodeException()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="MultitpleOutgoingFlowFromInputNodeException" id="controller.validator.error/MultitpleOutgoingFlowFromInputNodeException#MultitpleOutgoingFlowFromInputNodeException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="controller.validator/ValidatorErrorException&lt;-controller.validator.error/MultitpleOutgoingFlowFromInputNodeException" source="//@children.21" target="//@children.10/@sourceConnections.0" targetEnd="//@children.21/@sourceConnections.0/@children.1" sourceEnd="//@children.21/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="173,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="All" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

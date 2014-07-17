@@ -1,0 +1,122 @@
+14/5
+1)interazine con il grafo
+	1.1) interazine con il grafo, inserzione di un nodo
+	-inserimento nuovo Input node
+		a) inserimento con dimensioni standard, esito: successo
+		b) inserimento con drag and drop dall'angolo superiore sinistro all' angolo inferiore destro, esito: successso
+		c) inserimento con drag and drop dall'angolo inferiore destro all' angolo superiore sinistro, esito: successso
+		d) inserimento trascinandone le dimensioni oltre il limite della grafica, ci aspettiamo che il model panel attivi 
+		una scrollbar consentendoci di osservare l'intera finestra, esito: successo.
+		e) inserimento in modo che sia sovrapposto ad un altro, ci aspettiamo che crei il nodo delle dimensioni del trascinamento, esito : successo
+		f) inserimento di un nodo dello stesso tipo con lo stesso nome, ci aspettiamo che non venga aggiunto e che venga presentata una finestra di errore, esito: positivo. 
+		g) inserimento di un nodo di un tipo diverso con lo stesso nome, ci aspettiamo che non venga aggiunto e che venga presentata una finestra di errore, esito: positivo. 
+		h) inserimento di un nodo, ma al momento di inserire il nome chiudo la finestra di dialogo, riclicco poi sul ModelPanel e verifico che che non mi chieda di reinserire un nodo
+		i) inserimento di un nodo e dopo aver inserito parte del nome lo cancello utilizzando il tasto reset, dopo di che completo l'inserzione del nome e veridico che il risultato
+		 sia effettivamente il nome voluto, esito: positivo
+		j) inserimento di un nodo con un nome molto lungo, ci aspettiamo che il nodo abbia la dimensione voluta e che il nome venga troncato con dei punti, esito: successo.
+		l) entro del wizard di "Inserisci InputNode" e dopo di che modifico una osservazione nel ObservationPanel, verifico che quando torno nel ModelPanel possa ancora continuare la mia azione, esito : ok
+		
+	-inserimento nuovo Action node
+		a) inserimento con dimensioni standard, esito: successo
+		b) inserimento con drag and drop dall'angolo superiore sinistro all' angolo inferiore destro, esito: successso
+		c) inserimento con drag and drop dall'angolo inferiore destro all' angolo superiore sinistro, esito: successso
+		d) inserimento trascinandone le dimensioni oltre il limite della grafica, ci aspettiamo che il model panel attivi 
+		una scrollbar consentendoci di osservare l'intera finestra, esito: successo.
+		e) inserimento in modo che sia sovrapposto ad un altro, ci aspettiamo che crei il nodo delle dimensioni del trascinamento, esito : successo
+		f) inserimento di un nodo dello stesso tipo con lo stesso nome, ci aspettiamo che non venga aggiunto e che venga presentata una finestra di errore, esito: positivo. 
+		g) inserimento di un nodo di un tipo diverso con lo stesso nome, ci aspettiamo che non venga aggiunto e che venga presentata una finestra di errore, esito: positivo. 
+		h) inserimento di un nodo, ma al momento di inserire il nome chiudo la finestra di dialogo, riclicco poi sul ModelPanel e verifico che che non mi chieda di reinserire un nodo
+		i) inserimento di un nodo e dopo aver inserito parte del nome lo cancello utilizzando il tasto reset, dopo di che completo l'inserzione del nome e veridico che il risultato
+		 sia effettivamente il nome voluto, esito: positivo
+		j) inserimento di un nodo con un nome molto lungo, ci aspettiamo che il nodo abbia la dimensione voluta e che il nome venga troncato con dei punti, esito: successo.
+		l) entro del wiard di "Inserisci ActionNode" e dopo di che modifico una osservazione nel ObservationPanel, verifico che quando torno nel ModelPanel possa ancora continuare la mia azione, esito : ok	
+		
+	-inserimento nuovo Output node
+		a) inserimento con dimensioni standard, esito: successo
+		b) inserimento con drag and drop dall'angolo superiore sinistro all' angolo inferiore destro, esito: successso
+		c) inserimento con drag and drop dall'angolo inferiore destro all' angolo superiore sinistro, esito: successso
+		d) inserimento trascinandone le dimensioni oltre il limite della grafica, ci aspettiamo che il model panel attivi 
+		una scrollbar consentendoci di osservare l'intera finestra, esito: successo.
+		e) inserimento in modo che sia sovrapposto ad un altro, ci aspettiamo che crei il nodo delle dimensioni del trascinamento, esito : successo
+		f) inserimento di un nodo dello stesso tipo con lo stesso nome, ci aspettiamo che non venga aggiunto, che venga presentata una finestra di errore e che non venga aggiuna l'osservazione nell'ObservationPanel, esito: positivo. 
+		g) inserimento di un nodo di un tipo diverso con lo stesso nome, ci aspettiamo che non venga aggiunto, che venga presentata una finestra di errore e che non venga aggiuna l'osservazione nell'ObservationPanel, esito: positivo. 
+		h) inserimento di un nodo, ma al momento di inserire il nome chiudo la finestra di dialogo, riclicco poi sul ModelPanel e verifico che che non mi chieda di reinserire un nodo
+		i) inserimento di un nodo e dopo aver inserito parte del nome lo cancello utilizzando il tasto reset, dopo di che completo l'inserzione del nome e veridico che il risultato
+		 sia effettivamente il nome voluto, esito: positivo
+		j) inserimento di un nodo con un nome molto lungo, ci aspettiamo che il nodo abbia la dimensione voluta e che il nome venga troncato con dei punti, esito: successo.
+		l) entro del wiard di "Inserisci OutputNode" e dopo di che modifico una osservazione nel ObservationPanel, verifico che quando torno nel ModelPanel possa ancora continuare la mia azione, esito : ok
+		
+		in tutti i test precedenti l'osservazione relativa all'output node inserito viene aggiunta correttamente all'ObservationPanel, con lo stato di default OK.
+		
+		
+		
+		
+		in tutti i precedenti test di inserzione di un ActionNode, di un InputNode e di un Outputnodetest tutti i JButton e il JMenu "file" vengono disattivati
+		
+	1.2) interazioni con il grafo, inserzione di un flusso
+		a) inserzione di un flusso da un inputnode a un actionnode, esito: ok ma NESSUN MESSAGGIO CON L'UTENTE NEL LOG PANEL
+		b) inserzione di un flusso da un inputnode a un outputnode, ci aspettiamo che l'applicazione non lo acconsentisca 
+			come espresso nei requisiti, esito ok MA NESSUN MESSAGGIO CHE SEGNALE L'ERRORE NEL LOG PANEL
+		c) inserzione di un flusso da un inputnode a un inputnode, esito: ok ma NESSUN MESSAGGIO CON L'UTENTE NEL LOG PANEL
+		d) inserzione di un flusso che abbia source e target nello stesso inputnode, ci aspettiamo che l'applicazione non lo acconsentisca 
+			come espresso nei requisiti, esito ok MA NESSUN MESSAGGIO CHE SEGNALE L'ERRORE NEL LOG PANEL
+		e) inserzione di un flusso da un actionnode a un actionnode, esito: ok ma NESSUN MESSAGGIO CON L'UTENTE NEL LOG PANEL
+		f) inserzione di un flusso da un actionnode a un outputnode , esito: ok ma NESSUN MESSAGGIO CON L'UTENTE NEL LOG PANEL
+		g) inserzione di un flusso da un actionode a un inputnode, ci aspettiamo che l'applicazione non lo acconsentisca 
+			come espresso nei requisiti, esito ok MA NESSUN MESSAGGIO CHE SEGNALE L'ERRORE NEL LOG PANEL
+		h) inserzione di un flusso che abbia source e target nello stesso actionnode, ci aspettiamo che l'applicazione non lo acconsentisca 
+			come espresso nei requisiti, esito ok MA NESSUN MESSAGGIO CHE SEGNALE L'ERRORE NEL LOG PANEL 
+		i) inserzione di un flusso che abbia come source un outputnode, ci aspettiamo che l'applicazione non lo acconsentisca 
+			come espresso nei requisiti, esito ok MA NESSUN MESSAGGIO CHE SEGNALE L'ERRORE NEL LOG PANEL
+		l) inserzione di vari flussi in modo da creare un grafo ciclico, ci aspettiamo che l'applicazione non lo acconsentisca 
+			come espresso nei requisiti,  esito ok MA NESSUN MESSAGGIO CHE SEGNALE L'ERRORE NEL LOG PANEL
+		m) inserisco un flosso cliccando sul primo nodo correttamente, mentre clicco su un punto dove non è posizionato alcuno nodo,
+			mi aspetto che l'applicazione esca dalla modalità di inserzione flusso senza presentar alcun messaggio all'utente, esito: ok ma NESSUN MESSAGGIO CON L'UTENTE NEL LOG PANEL
+			Se poi riclicco su un nodo verifico che non venga creato alcun flusso, esito: ok ma NESSUN MESSAGGIO CON L'UTENTE NEL LOG PANEL
+		n) entro nel wizard inserzione flusso e dopo di che clicco su un punto dove non è collocato alcun nodo, mi aspetto che l'applicatione continui ad aspettare un clik corretto
+		o) entro nel wizard inserzione flusso e dopo di che clicco il pulsante destro del mouse, mi aspetto che l'applicazione esca dal wizard, esito: ok ma NESSUN MESSAGGIO CON L'UTENTE NEL LOG PANEL
+		 	Se poi riclicco su un nodo verifico che non venga creato alcun flusso, esito: ok ma NESSUN MESSAGGIO CON L'UTENTE NEL LOG PANEL 
+		p) entro nel wizard inserzione flusso e verifico che il JMenu "file" e tutti i JButton si disattivino, esito: ok 
+		q) entro del wiard di "Inerisci flusso " e verifico che in qualunque istante io modifichi una osservazione nel ObservationPanel e poi torni nel ModelPanel possa ancora continuare la mia azione, esito : ok
+	
+	1.3) interazioni con il grafo, cancellazione di un nodo
+		a) cancellazione di un InsertNode, mi aspetto che il nodo venga cancellato sia graficamente sia nella struttura assieme ai relavi flow a lui connessi, esito: ok 
+		b) cancellazione di un ActionNode, mi aspetto che il nodo venga cancellato sia graficamente sia nella struttura assieme ai relavi flow a lui connessi, esito: ok
+		c) cancellazione di un OutputNode, mi aspetto che il nodo venga cancellato sia graficamente, sia nella struttura assieme ai relavi flow a lui connessi e che l'osservazione associata venga cancellata dall'ObservationPanel, esito: ok  
+		d) dopo essere entrato nel wizard "delete node" modifico una osservazione nell'observationPanel e verifico che una volta tornato nel ModelPanel possa concludere la mia azione, esito: ok 
+		e) dopo essere entrato nel wizard "delete node" clicco in un punto dove non è collocato alcun node, mi aspetto che l'applicazione esca dal wizard e riattivi tutti i pulsanti, esito: ok
+		f)  dopo essere entrato nel wizard "delete node" verifico che cliccando con il destro i qualunque punto del ModelPanel, l'applicazine esca dal widard, esito: ok
+			Se poi clicco su u nodo questo non viene eliminato, esito: NO!!!!!!!!!!!!!
+		g) Se cancello un nodo ed il modello era nello stato di "correct" verifico che lo stato passi nello stato di Warning, esito : ok
+			Nel caso in cui cancelli l'ultimo InputNode | ActionNode | OutputNode, il logPanel mi avvisa.
+	
+	
+	21/5/2012
+	testing del menu e dell'analisi minimale. (max sa già che mancano le segnalazioni con l'utente)
+	1.1) Exit
+		a) abbiamo creato un grafo qualunque ed abbiamo poi richiesto l'uscita dall'applicazione attraverso il pulsante "exit" nella voce "file", esito: successo
+	1.2) New
+		a)creo un nuovo grafo e poi faccio "new file" accertandosi che il vecchio grafo sia stato sovrascritto, esito: successo
+		b)creo un nuovo grafo, lo salvo, faccio poi new e verifico che il vecchio grafo sia stato eliminato, esito: successo
+		c)effettuo una modifica del grafo ad esempio aggiungendo un nodo, e quando sto per effettuare la modifica mi aspetto che venga disabilitata la voce "file" nella JMenu, esito: insuccesso, 
+		  ma probabilmente è stata sovrascritta la versione corretta poichè questo test aveva precedentemente dato esito positivo
+	1.3) Save
+		a) creo un grafo e lo salvo usando "Save as", mi aspetto che l'applicazione mi visualizzi il dialog per digitar il nome del file, esito: successo
+		b) creo un grafo  lo salvo per la prima volta tramite il tasto "Save", mi aspetto che l'applicazione mi reindirizzi in modalità "Save as", esito: successo
+		c) creo un grafo, lo salvo, lo modifico e lo risalvo tramite il tasto "Save", mi aspetto che quando lo ricarico le modifiche siano state applicate, esito: successo
+		d) creo un grafo, lo salvo, lo odifico e lo risalvo tramite il tasto "Save as" digitando un altro nome, mi aspetto che l'applicazione crei 2 file di cui uno è l'aggiornamento dell'altro, esito: successo
+		e) creo un grafo, lo salvo, ne apro un'altro e mi aspetto che quando modifico il secondo l'applicazione stia effettivamente operando sul grafo aperto dimenticando quello prcedentemente chiuso, esito: successo
+	1.4) Open
+		a)creo un grafo, lo salvo e lo ricarico, esito: successo
+		b)creo un grafo, lo salvo lo modifico, lo ricarico e veridico che venga caricato senza le modifiche, 
+		c)creo un grafo con uno stato e ne ricarico un altro con un altro stato, verifico che il grafo venga caricato correttamente aggiornando lo stato, esito: successo
+	1.5) Minimal Hitting Set Analysis
+		a)verifico che il pulsante di "Execute diagnosis" sia disponibile solo se lo stato del grafo è corretto, esito: corretto
+		b)partedo da un grafo con stato NON corretto, carico un grafo con stato corretto, verifico che il pulsante di "Execute diagnosis" sia disponibile, esito: corretto
+		c)partedo da un grafo con stato corretto, carico un grafo con stato corretto, verifico che il pulsante di "Execute diagnosis" NON sia disponibile, esito: corretto
+		d)dovremo inserire dei casi di test per verificare che l'algoritmo sia corretto: (l'abbiamo gia fatto, vogliamo rifarlo?)
+		Precedentemente avevamo svolto dei casi di test prendendo come riferimento i modelli sui lucidi, i risultati erano corretti ma alcuni 
+		esempi risultavano lenti poichè era stato utilizzano l'algoritmo di riordinamento Bubble Sort invece del più performante Quick Sort.
+		L'algoritmo è stato quindi ottimizzato e sono stati svolti altri casi di testo che hanno nuovamente dato esito positivi (pat se vuoi scrivere che
+		quando hai rifatto i test non andavano bene per un errorino fai pure)
+		

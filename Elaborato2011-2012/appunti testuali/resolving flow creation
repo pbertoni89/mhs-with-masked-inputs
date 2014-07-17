@@ -1,0 +1,19 @@
+*********************** AGGIUNTA DI UN FLOW *****************************
+
+you can do one of these 2 solutions:
+
+1) create a frame with 2 radiobuttons; one for the source vertex, one for target vertex.
+in addition you can automatically filter the radiobutton choices to prevent that a outputnode
+could be selected as source (viceversa with a inputnode)
+
+2) create the more classic method: with one click of the mouse the user selects the source node,
+while the second one the user selects the target node
+
+
+********************** AGGIUNTA FISICA DI UN FLOW ******************************
+
+possiamo utilizzare il listener GraphSelectionListener per vedere se la selezione dell'utente
+si modifica in qualche modo... (sonosciuto)
+
+possiamo anche utilizzare GraphListener poer usi futuri (la javadoc dice che manda un evento
+se il grafo viene modificato "in some way"; POTREBBE ESSERE DI TUTTO!)

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="2533,2075" id="gui" metadata="uml2-1.0" initialized="true" scrolledX="808" scrolledY="752" tag="1000" key="32303037303533312D3130303020456C61626F7261746F323031312D323031322F70617472697A696F">
+  <children xsi:type="editmodel:ClassEditModel" name="FinalDiagnosisDialog" location="50,1916" size="176,139" id="gui/FinalDiagnosisDialog" runTimeClassModel="FinalDiagnosisDialog(Ljavax.swing.JFrame;Ljava.lang.String;Ljava.util.Collection;),layout,lim,add(Ljava.awt.Component;Ljava.awt.GridBagConstraints;),setGridBagConstraints(DDIIIII)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="layout" id="gui/FinalDiagnosisDialog#layout"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lim" id="gui/FinalDiagnosisDialog#lim"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="139,54">
+      <children xsi:type="editmodel:MethodEditModel" name="FinalDiagnosisDialog" id="gui/FinalDiagnosisDialog#FinalDiagnosisDialog(Ljavax.swing.JFrame;Ljava.lang.String;Ljava.util.Collection;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="gui/FinalDiagnosisDialog#add(Ljava.awt.Component;Ljava.awt.GridBagConstraints;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setGridBagConstraints" id="gui/FinalDiagnosisDialog#setGridBagConstraints(DDIIIII)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.0 //@children.13/@sourceConnections.3 //@children.12/@sourceConnections.2" name="GUIApplication" location="720,1061" size="142,85" id="gui/GUIApplication" runTimeClassModel="setStatusLogState(Ljava.lang.String;Ljava.awt.Color;),GUIApplication(Ljava.lang.String;Lgraph.Model;Lcontroller.menubar.NewFileController;Lcontroller.menubar.OpenFileController;Lcontroller.menubar.SaveFileController;Lcontroller.menubar.SaveAsFileController;Lcontroller.menubar.ExitProgramController;Lcontroller.gui.InsertInputNodeController;Lcontroller.gui.InsertActionNodeController;Lcontroller.gui.InsertOutputNodeController;Lcontroller.gui.InsertFlowController;Lcontroller.gui.DeleteNodeController;Lcontroller.gui.ExecuteMinimalDiagnosisController;),addListeners(Lcontroller.menubar.NewFileController;Lcontroller.menubar.OpenFileController;Lcontroller.menubar.SaveFileController;Lcontroller.menubar.SaveAsFileController;Lcontroller.menubar.ExitProgramController;Lcontroller.gui.InsertInputNodeController;Lcontroller.gui.InsertActionNodeController;Lcontroller.gui.InsertOutputNodeController;Lcontroller.gui.InsertFlowController;Lcontroller.gui.DeleteNodeController;Lcontroller.gui.ExecuteMinimalDiagnosisController;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,54">
+      <children xsi:type="editmodel:MethodEditModel" name="GUIApplication" id="gui/GUIApplication#GUIApplication(Ljava.lang.String;Lgraph.Model;Lcontroller.menubar.NewFileController;Lcontroller.menubar.OpenFileController;Lcontroller.menubar.SaveFileController;Lcontroller.menubar.SaveAsFileController;Lcontroller.menubar.ExitProgramController;Lcontroller.gui.InsertInputNodeController;Lcontroller.gui.InsertActionNodeController;Lcontroller.gui.InsertOutputNodeController;Lcontroller.gui.InsertFlowController;Lcontroller.gui.DeleteNodeController;Lcontroller.gui.ExecuteMinimalDiagnosisController;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setStatusLogState" id="gui/GUIApplication#setStatusLogState(Ljava.lang.String;Ljava.awt.Color;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/ModelPanel@modelPanel+gui/GUIApplication@" source="//@children.1" target="//@children.8" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42" id="gui/ModelPanel@modelPanel+gui/GUIApplication@|gui/GUIApplication#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="modelPanel" location="283,53" id="gui/ModelPanel@modelPanel+gui/GUIApplication@|gui/ModelPanel#modelPanel" multiplicityLabel="//@children.1/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - modelPanel" location="635,1082" size="64,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="635,1110" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/MainMenuBar@applicationMenu+gui/GUIApplication@" source="//@children.1" target="//@children.6" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="27,85" id="gui/MainMenuBar@applicationMenu+gui/GUIApplication@|gui/GUIApplication#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="applicationMenu" location="102,0" id="gui/MainMenuBar@applicationMenu+gui/GUIApplication@|gui/MainMenuBar#applicationMenu" multiplicityLabel="//@children.1/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - applicationMenu" location="754,1254" size="87,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="722,1254" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/LogPanel@logPanel+gui/GUIApplication@" source="//@children.1" target="//@children.9" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="123,85" id="gui/LogPanel@logPanel+gui/GUIApplication@|gui/GUIApplication#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="logPanel" location="18,0" id="gui/LogPanel@logPanel+gui/GUIApplication@|gui/LogPanel#logPanel" multiplicityLabel="//@children.1/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - logPanel" location="850,1254" size="50,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="818,1254" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.1" name="SelectSCPowerSetDialog" location="1598,510" size="203,139" id="gui/SelectSCPowerSetDialog" runTimeClassModel="result,actionPerformed(Ljava.awt.event.ActionEvent;),SelectSCPowerSetDialog(Ljavax.swing.JFrame;Ljava.lang.String;Ljava.util.Set;),findSCfromLabel(Ljava.lang.String;),layout,lim,rESET,oK,jButtonSelectedLabel">
+    <children xsi:type="editmodel:CompartmentEditModel" size="163,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="jButtonSelectedLabel" id="gui/SelectSCPowerSetDialog#jButtonSelectedLabel"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oK" id="gui/SelectSCPowerSetDialog#oK"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rESET" id="gui/SelectSCPowerSetDialog#rESET"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="result" id="gui/SelectSCPowerSetDialog#result"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="151,54">
+      <children xsi:type="editmodel:MethodEditModel" name="findSCfromLabel" id="gui/SelectSCPowerSetDialog#findSCfromLabel(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.1" name="StatusLog" location="1515,1163" size="149,139" id="gui/StatusLog" runTimeClassModel="StatusLog(Ljava.lang.String;),ModelStateChanged(Ltoolkit.modelstateevent.ModelStateEvent;),StatusLog(),StatusLog(Ljava.awt.Color;),StatusLog(Ljava.awt.Color;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,90">
+      <children xsi:type="editmodel:MethodEditModel" name="ModelStateChanged" id="gui/StatusLog#ModelStateChanged(Ltoolkit.modelstateevent.ModelStateEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StatusLog" id="gui/StatusLog#StatusLog(Ljava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StatusLog" id="gui/StatusLog#StatusLog(Ljava.awt.Color;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StatusLog" id="gui/StatusLog#StatusLog(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="StatusLog" id="gui/StatusLog#StatusLog()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.13/@sourceConnections.1" name="InsertNodeNameDialog" location="930,525" size="188,157" id="gui/InsertNodeNameDialog" runTimeClassModel="keyTyped(Ljava.awt.event.KeyEvent;),keyPressed(Ljava.awt.event.KeyEvent;),actionPerformed(Ljava.awt.event.ActionEvent;),isOk,keyReleased(Ljava.awt.event.KeyEvent;),newNameOk,rESET,oK,InsertNodeNameDialog(Ljavax.swing.JFrame;ZLjava.lang.String;Ljava.util.Set;),checkUniqueName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="isOk" id="gui/InsertNodeNameDialog#isOk"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="newNameOk" id="gui/InsertNodeNameDialog#newNameOk"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oK" id="gui/InsertNodeNameDialog#oK"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rESET" id="gui/InsertNodeNameDialog#rESET"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,108">
+      <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="gui/InsertNodeNameDialog#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="checkUniqueName" id="gui/InsertNodeNameDialog#checkUniqueName()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.0" name="ObservationPanel" location="1560,990" size="164,121" id="gui/ObservationPanel" runTimeClassModel="removeResultRenderer(Lgraph.comp.OutputNode;),numberOfResults,ObservationPanel(),addResultRenderer(Lgraph.comp.OutputNode;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="numberOfResults" id="gui/ObservationPanel#numberOfResults"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="141,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ObservationPanel" id="gui/ObservationPanel#ObservationPanel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addResultRenderer" id="gui/ObservationPanel#addResultRenderer(Lgraph.comp.OutputNode;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeResultRenderer" id="gui/ObservationPanel#removeResultRenderer(Lgraph.comp.OutputNode;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="gui/ObservationPanel-Standard::Call->gui/ResultRenderer*gui/ObservationPanel-Standard::Instantiate->gui/ResultRenderer*gui/ObservationPanel-Soyatec::Import->gui/ResultRenderer" source="//@children.5" target="//@children.10" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call, Instantiate»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="164,60" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,71"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="MainMenuBar" location="645,1275" size="130,67" id="gui/MainMenuBar" runTimeClassModel="MainMenuBar(),getOpen(),getFile(),getSave(),addListeners(Lcontroller.Controller;Lcontroller.Controller;Lcontroller.Controller;Lcontroller.Controller;Lcontroller.Controller;),getSaveas(),getExit(),getSerialversionuid(),getEdit(),getNew()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,36">
+      <children xsi:type="editmodel:MethodEditModel" name="MainMenuBar" id="gui/MainMenuBar#MainMenuBar()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.13/@sourceConnections.4" name="ErrorOutPut" location="840,780" size="132,103" id="gui/ErrorOutPut" runTimeClassModel="actionPerformed(Ljava.awt.event.ActionEvent;),ErrorOutPut(Ljavax.swing.JFrame;Z),okButton">
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="okButton" id="gui/ErrorOutPut#okButton"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ErrorOutPut" id="gui/ErrorOutPut#ErrorOutPut(Ljavax.swing.JFrame;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="gui/ErrorOutPut#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="ModelPanel" location="345,1050" size="283,139" id="gui/ModelPanel" runTimeClassModel="colorNodes(Ljava.util.Set;),colorNode(Lgraph.comp.Node;),ModelPanel(Lgraph.Model;),ApplyAttributeToNode(Lgraph.comp.Node;Ljava.awt.Rectangle;),mouseWheelMoved(Ljava.awt.event.MouseWheelEvent;),jgraph,positionNodes(Ljava.util.Set;),jgraphAdapter,positionNode(Lgraph.comp.Node;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="260,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="jgraph" id="gui/ModelPanel#jgraph"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="jgraphAdapter" id="gui/ModelPanel#jgraphAdapter"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,126">
+      <children xsi:type="editmodel:MethodEditModel" name="ModelPanel" id="gui/ModelPanel#ModelPanel(Lgraph.Model;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="colorNode" id="gui/ModelPanel#colorNode(Lgraph.comp.Node;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="positionNode" id="gui/ModelPanel#positionNode(Lgraph.comp.Node;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.2" name="LogPanel" location="825,1275" size="122,175" id="gui/LogPanel" runTimeClassModel="LogPanel(Ljava.lang.String;Ljava.lang.String;),icon,LogPanel(Ljava.lang.String;),LogPanel(),setIcon(Ljavax.swing.ImageIcon;),LogPanel(Ljavax.swing.ImageIcon;Ljava.lang.String;),valueChanged(Levent.stringevent.StringEvent;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="76,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="icon" id="gui/LogPanel#icon"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="99,108">
+      <children xsi:type="editmodel:MethodEditModel" name="LogPanel" id="gui/LogPanel#LogPanel(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="LogPanel" id="gui/LogPanel#LogPanel(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="LogPanel" id="gui/LogPanel#LogPanel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="LogPanel" id="gui/LogPanel#LogPanel(Ljavax.swing.ImageIcon;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setIcon" id="gui/LogPanel#setIcon(Ljavax.swing.ImageIcon;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="valueChanged" id="gui/LogPanel#valueChanged(Levent.stringevent.StringEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0" name="ResultRenderer" location="1800,979" size="159,157" id="gui/ResultRenderer" runTimeClassModel="actionPerformed(Ljava.awt.event.ActionEvent;),okm,ResultRenderer(Lgraph.comp.OutputNode;),ko,sizeGroup,ok">
+    <children xsi:type="editmodel:CompartmentEditModel" size="136,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="ko" id="gui/ResultRenderer#ko"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ok" id="gui/ResultRenderer#ok"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="okm" id="gui/ResultRenderer#okm"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sizeGroup" id="gui/ResultRenderer#sizeGroup"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ResultRenderer" id="gui/ResultRenderer#ResultRenderer(Lgraph.comp.OutputNode;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="gui/ResultRenderer#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.2" name="GraphicStackComponent" location="1515,811" size="200,85" id="gui/GraphicStackComponent" runTimeClassModel="addComponentInStack(Ljava.awt.Component;Ljava.awt.Color;),GraphicStackComponent()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="149,36">
+      <children xsi:type="editmodel:MethodEditModel" name="GraphicStackComponent" id="gui/GraphicStackComponent#GraphicStackComponent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addComponentInStack" id="gui/GraphicStackComponent#addComponentInStack(Ljava.awt.Component;Ljava.awt.Color;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.13/@sourceConnections.2" id="gui/GraphicComponent&lt;-gui/GraphicStackComponent" source="//@children.11" target="//@children.14" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="100,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="82,28" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/GraphicStackComponent@biggerPanel+gui/SelectSCPowerSetDialog@" source="//@children.11" target="//@children.2" targetEnd="//@children.11/@sourceConnections.1/@children.2" label="//@children.11/@sourceConnections.1/@children.0" sourceEnd="//@children.11/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="biggerPanel" location="141,0" id="gui/GraphicStackComponent@biggerPanel+gui/SelectSCPowerSetDialog@|gui/GraphicStackComponent#biggerPanel" attachSource="true" multiplicityLabel="//@children.11/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.11/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - biggerPanel" location="1663,790" size="66,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1631,790" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="58,139" id="gui/GraphicStackComponent@biggerPanel+gui/SelectSCPowerSetDialog@|gui/SelectSCPowerSetDialog#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.13/@sourceConnections.0" name="RightPanel" location="1263,990" size="204,157" id="gui/RightPanel" runTimeClassModel="addListeners(Lcontroller.Controller;),executeMinimalDiagnosis,RightPanel(),getObservationPanel(),getExecutediagnosis(),getSerialversionuid(),scrollObservation,RightPanel(Lcontroller.Controller;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="181,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="executeMinimalDiagnosis" id="gui/RightPanel#executeMinimalDiagnosis"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="scrollObservation" id="gui/RightPanel#scrollObservation"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,72">
+      <children xsi:type="editmodel:MethodEditModel" name="RightPanel" id="gui/RightPanel#RightPanel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="RightPanel" id="gui/RightPanel#RightPanel(Lcontroller.Controller;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addListeners" id="gui/RightPanel#addListeners(Lcontroller.Controller;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getObservationPanel" id="gui/RightPanel#getObservationPanel()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/ObservationPanel@observationPanel+gui/RightPanel@" source="//@children.12" target="//@children.5" targetEnd="//@children.12/@sourceConnections.0/@children.2" label="//@children.12/@sourceConnections.0/@children.0" sourceEnd="//@children.12/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="204,60" id="gui/ObservationPanel@observationPanel+gui/RightPanel@|gui/RightPanel#" attachSource="true" roleLabel="//@children.12/@sourceConnections.0/@children.1/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="1474,1029" size="0,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="observationPanel" location="0,60" id="gui/ObservationPanel@observationPanel+gui/RightPanel@|gui/ObservationPanel#observationPanel" multiplicityLabel="//@children.12/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.12/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - observationPanel" location="1460,1029" size="93,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1535,1057" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/StatusLog@statuslog+gui/RightPanel@" source="//@children.12" target="//@children.3" targetEnd="//@children.12/@sourceConnections.1/@children.2" label="//@children.12/@sourceConnections.1/@children.0" sourceEnd="//@children.12/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="194,157" id="gui/StatusLog@statuslog+gui/RightPanel@|gui/RightPanel#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="statuslog" location="0,10" id="gui/StatusLog@statuslog+gui/RightPanel@|gui/StatusLog#statuslog" multiplicityLabel="//@children.12/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.12/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - statuslog" location="1454,1180" size="54,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1490,1152" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/RightPanel@rightpanel+gui/GUIApplication@" source="//@children.12" target="//@children.1" targetEnd="//@children.12/@sourceConnections.2/@children.2" label="//@children.12/@sourceConnections.2/@children.0" sourceEnd="//@children.12/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="rightpanel" location="0,113" id="gui/RightPanel@rightpanel+gui/GUIApplication@|gui/RightPanel#rightpanel" attachSource="true" multiplicityLabel="//@children.12/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.12/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + rightpanel" location="1197,1082" size="59,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1238,1110" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="142,42" id="gui/RightPanel@rightpanel+gui/GUIApplication@|gui/GUIApplication#" roleLabel="//@children.12/@sourceConnections.2/@children.2/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="869,1082" size="0,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="gui/RightPanel-Standard::Call->gui/GraphicNoStackComponent*gui/RightPanel-Soyatec::Access->gui/GraphicNoStackComponent*gui/RightPanel-Standard::Derive->gui/GraphicNoStackComponent*gui/RightPanel-Standard::Instantiate->gui/GraphicNoStackComponent*gui/RightPanel-Soyatec::Import->gui/GraphicNoStackComponent" source="//@children.12" target="//@children.13" targetEnd="//@children.12/@sourceConnections.3/@children.2" label="//@children.12/@sourceConnections.3/@children.0" sourceEnd="//@children.12/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive, Import, Call, Access, Instantiate»" size="199,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="14,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="119,85"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="gui/GraphicNoStackComponent&lt;-gui/RightPanel" source="//@children.12" target="//@children.13" targetEnd="//@children.12/@sourceConnections.4/@children.1" sourceEnd="//@children.12/@sourceConnections.4/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="217,52" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.1 //@children.12/@sourceConnections.3 //@children.12/@sourceConnections.4" name="GraphicNoStackComponent" location="1157,820" size="217,85" id="gui/GraphicNoStackComponent" runTimeClassModel="add(Ljava.awt.Component;Ljava.awt.GridBagConstraints;),GraphicNoStackComponent()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="162,36">
+      <children xsi:type="editmodel:MethodEditModel" name="GraphicNoStackComponent" id="gui/GraphicNoStackComponent#GraphicNoStackComponent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="gui/GraphicNoStackComponent#add(Ljava.awt.Component;Ljava.awt.GridBagConstraints;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/GraphicNoStackComponent@contenitore+gui/RightPanel@" source="//@children.13" target="//@children.12" targetEnd="//@children.13/@sourceConnections.0/@children.2" label="//@children.13/@sourceConnections.0/@children.0" sourceEnd="//@children.13/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="contenitore" location="161,85" id="gui/GraphicNoStackComponent@contenitore+gui/RightPanel@|gui/GraphicNoStackComponent#contenitore" attachSource="true" multiplicityLabel="//@children.13/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.13/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - contenitore" location="1325,912" size="64,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1293,912" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="55,0" id="gui/GraphicNoStackComponent@contenitore+gui/RightPanel@|gui/RightPanel#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="gui/GraphicNoStackComponent@contenitore+gui/InsertNodeNameDialog@" source="//@children.13" target="//@children.4" targetEnd="//@children.13/@sourceConnections.1/@children.2" label="//@children.13/@sourceConnections.1/@children.0" sourceEnd="//@children.13/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="contenitore" location="26,0" id="gui/GraphicNoStackComponent@contenitore+gui/InsertNodeNameDialog@|gui/GraphicNoStackComponent#contenitore" attachSource="true" multiplicityLabel="//@children.13/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.13/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - contenitore" location="1190,799" size="64,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1170,799" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="115,156" id="gui/GraphicNoStackComponent@contenitore+gui/InsertNodeNameDialog@|gui/InsertNodeNameDialog#" roleLabel="//@children.13/@sourceConnections.1/@children.2/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="1038,689" size="0,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="gui/GraphicComponent&lt;-gui/GraphicNoStackComponent" source="//@children.13" target="//@children.11/@sourceConnections.0" targetEnd="//@children.13/@sourceConnections.2/@children.1" sourceEnd="//@children.13/@sourceConnections.2/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="108,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-774,-607" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="gui/GraphicNoStackComponent@contenitore+gui/GUIApplication@" source="//@children.13" target="//@children.1" targetEnd="//@children.13/@sourceConnections.3/@children.2" label="//@children.13/@sourceConnections.3/@children.0" sourceEnd="//@children.13/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="contenitore" location="0,80" id="gui/GraphicNoStackComponent@contenitore+gui/GUIApplication@|gui/GraphicNoStackComponent#contenitore" attachSource="true" multiplicityLabel="//@children.13/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.13/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - contenitore" location="1086,879" size="64,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1132,907" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="142,0" id="gui/GraphicNoStackComponent@contenitore+gui/GUIApplication@|gui/GUIApplication#" roleLabel="//@children.13/@sourceConnections.3/@children.2/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="855,1040" size="0,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="gui/GraphicNoStackComponent@contenitore+gui/ErrorOutPut@" source="//@children.13" target="//@children.7" targetEnd="//@children.13/@sourceConnections.4/@children.2" label="//@children.13/@sourceConnections.4/@children.0" sourceEnd="//@children.13/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="contenitore" location="0,32" id="gui/GraphicNoStackComponent@contenitore+gui/ErrorOutPut@|gui/GraphicNoStackComponent#contenitore" attachSource="true" multiplicityLabel="//@children.13/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.13/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - contenitore" location="1086,831" size="64,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1132,859" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="132,72" id="gui/GraphicNoStackComponent@contenitore+gui/ErrorOutPut@|gui/ErrorOutPut#" roleLabel="//@children.13/@sourceConnections.4/@children.2/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="979,831" size="0,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.0" name="GraphicComponent" location="1302,645" size="165,29" id="gui/GraphicComponent" runTimeClassModel="GraphicComponent([Lcontroller.Controller;),setGridBagConstraints(DDIIIII)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="139,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="EditModelButtonPanel" location="1157,1245" size="183,175" id="gui/EditModelButtonPanel" runTimeClassModel="insertActionNode,addlistener(Ljavax.swing.JButton;Lcontroller.Controller;),insertInputNode,insertOutputNode,deleteNode,setButtonsEnabled(Z),EditModelButtonPanel(),insertFlow">
+    <children xsi:type="editmodel:CompartmentEditModel" size="145,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="deleteNode" id="gui/EditModelButtonPanel#deleteNode"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="insertActionNode" id="gui/EditModelButtonPanel#insertActionNode"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="insertFlow" id="gui/EditModelButtonPanel#insertFlow"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="insertInputNode" id="gui/EditModelButtonPanel#insertInputNode"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="insertOutputNode" id="gui/EditModelButtonPanel#insertOutputNode"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,54">
+      <children xsi:type="editmodel:MethodEditModel" name="EditModelButtonPanel" id="gui/EditModelButtonPanel#EditModelButtonPanel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setButtonsEnabled" id="gui/EditModelButtonPanel#setButtonsEnabled(Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="gui/EditModelButtonPanel@applicationModelButtonPanel+gui/GUIApplication@" source="//@children.15" target="//@children.1" targetEnd="//@children.15/@sourceConnections.0/@children.2" label="//@children.15/@sourceConnections.0/@children.0" sourceEnd="//@children.15/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="applicationModelButtonPanel" location="10,0" id="gui/EditModelButtonPanel@applicationModelButtonPanel+gui/GUIApplication@|gui/EditModelButtonPanel#applicationModelButtonPanel" attachSource="true" multiplicityLabel="//@children.15/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.15/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - applicationModelButtonPanel" location="1174,1224" size="146,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1142,1224" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="142,75" id="gui/EditModelButtonPanel@applicationModelButtonPanel+gui/GUIApplication@|gui/GUIApplication#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="gui/GraphicNoStackComponent&lt;-gui/EditModelButtonPanel" source="//@children.15" target="//@children.13" targetEnd="//@children.15/@sourceConnections.1/@children.1" sourceEnd="//@children.15/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="40,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="33,85" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="gui/GraphicStackComponent@stack+gui/EditModelButtonPanel@" source="//@children.15" target="//@children.11" targetEnd="//@children.15/@sourceConnections.2/@children.2" label="//@children.15/@sourceConnections.2/@children.0" sourceEnd="//@children.15/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="183,76" id="gui/GraphicStackComponent@stack+gui/EditModelButtonPanel@|gui/EditModelButtonPanel#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="stack" location="200,59" id="gui/GraphicStackComponent@stack+gui/EditModelButtonPanel@|gui/GraphicStackComponent#stack" multiplicityLabel="//@children.15/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.15/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - stack" location="1722,849" size="36,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1722,877" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

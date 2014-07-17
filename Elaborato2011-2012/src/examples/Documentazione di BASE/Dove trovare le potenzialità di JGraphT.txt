@@ -1,0 +1,105 @@
+**************************** editor visuale di JGRaphT *****************************
+
+per spostare un flusso:
+	1) trascini la punta del flusso (o un estremo del flusso)
+	2) sempre trascinandolo sposti il flusso, poi togli il click
+per cambiare il target del flusso:
+	1) trascini la punta del flusso
+	2) posiziono la punta sull'etichetta del nodo desiderato
+per cambiare il source del flusso:
+	1) trascini la coda del flusso
+	2) posiziono la coda del flusso sull'etichetta del nodo desiderato
+
+
+****************************** diversi tipi di directgraph *****************************
+
+in jGraph ci sono diversi tipi di grafi Diretti; questo è un elenco (che abbiamo reperito nella documentazione di JGraph, sezione DirectGraph):
+
+1) AsUnweightedDirectedGraph: An unweighted view of the backing weighted graph specified in the constructor. This graph allows modules to apply algorithms designed for unweighted graphs to a weighted graph by simply ignoring edge weights. Query operations on this graph "read through" to the backing graph. Vertex addition/removal and edge addition/removal are all supported (and immediately reflected in the backing graph). 
+	Note that edges returned by this graph's accessors are really just the edges of the underlying directed graph.
+	This graph does not pass the hashCode and equals operations through to the backing graph, but relies on Object's equals and hashCode methods. This graph will be serializable if the backing graph is serializable.
+
+2) DefaultDirectedGraph: A directed graph. A default directed graph is a non-simple directed graph in which multiple edges between any two vertices are not permitted, but loops are. 
+3) DefaultDirectedWeightedGraph: A directed weighted graph. A directed weighted graph is a non-simple directed graph in which multiple edges between any two vertices are not permitted, but loops are. The graph has weights on its edges. 
+4) DirectedGraphUnion: <nulla>
+5) DirectedMaskSubgraph: A directed graph that is a MaskSubgraph on another graph. 
+6) DirectedMultigraph: A directed multigraph. A directed multigraph is a non-simple directed graph in which loops and multiple edges between any two vertices are permitted. 
+7) DirectedPseudograph: A directed pseudograph. A directed pseudograph is a non-simple directed graph in which both graph loops and multiple edges are permitted. If you're unsure about pseudographs, see: http://mathworld.wolfram.com/Pseudograph.html. 
+8) DirectedSubgraph: A directed graph that is a subgraph on other graph. 
+9) DirectedWeightedMultigraph: A directed weighted multigraph. A directed weighted multigraph is a non-simple directed graph in which loops and multiple edges between any two vertices are permitted, and edges have weights. 
+10) DirectedWeightedSubgraph: A directed weighted graph that is a subgraph on other graph.
+11) EdgeReversedGraph: Provides an edge-reversed view g' of a directed graph g. The vertex sets for the two graphs are the same, but g' contains an edge (v2, v1) iff g contains an edge (v1, v2). g' is backed by g, so changes to g are reflected in g', and vice versa. 
+12) ListenableDirectedGraph:A directed graph which is also ListenableGraph. 
+13) ListenableDirectedWeightedGraph: A directed weighted graph which is also ListenableGraph
+14) SimpleDirectedGraph: A simple directed graph. A simple directed graph is a directed graph in which neither multiple edges between any two vertices nor loops are permitted. 
+15) SimpleDirectedWeightedGraph: A simple directed weighted graph. A simple directed weighted graph is a simple directed graph for which edges are assigned weights. 
+16) UnmodifiableDirectedGraph: A directed graph that cannot be modified.
+
+
+**************************** problema del predecessore/successore ***********************
+
+si potrebbe usare incomingEdgesOf (Vertex) che, dato un vertice ritorna un Set di flussi
+in entrata. su tali flussi dopo si spera che ci sia una funzione che ritorno gli estremi
+di un flusso    
+
+abbiamo trovato un metodo che ritorna il nodo di partenza/ritorno di un flusso. è getEdgeSource/getEdgeTarget
+della classe org.JGraphT.JGraph che dato un flusso ritorna gli estremi.   
+
+
+getEdge: è un metodo che, dati 2 vertici, ritorna NULL se non sono collegati oppure il flusso linkante i 2
+
+SOLUZIONE:
+nella classe Graphs ci sono dei metodi interessanti quali, per esempio, predecessorListOf
+che, dato in ingresso un grafico diretto g e un vertice v ritorna una list<V> dei nodi
+
+*************************** problema dei sottografi ciclici ***************************
+
+nel pacchetto org.jgrapht.alg.CycleDetector<V,E> abbiamo la classe CycleDetector che
+gestisce appunto il controllo di eventiuali cicli nel grafo. Si possono usare importanti
+metodi come:
+
+detectCyclesContainingVertex(V v)
+
+che, dato un vertice, ritorna TRUE se il vertice appartiene ad un ciclo, FALSE altrimenti
+
+METODO DI UTILIZZO:
+il caso di un grafo ciclico può verificarsi ogni volta che creo un flusso dunque, ogni
+volta che punto "l'end node" di un flusso verifico se SU QUEL NODO si è verificata la 
+condizione di ciclicità. 
+
+PS:da ricordarsi che quando si istanzia la classe CycleDetector bisogna dire a quale grafico
+applicare il CycleDetector
+
+
+*************************** problema degli errori ************************************* 
+
+ERRORE STESSA COPPIA NODI MA PIU' FLUSSI INTERNI (A->B, B->C, A->B)
+ - DirectedGraph non permette flussi identici
+ - SimpleDirectGraph (è ovvio) non permette flussi identici
+ERRORE GRAFO AUTOFLUSSO (A->A)
+ - DirectGraph permette loop interni
+ - SimpleDirectGraph non permette loop interni
+ERRORE GRAFO CICLICO (A->B->A)
+ - DirectGraph permette cicli interni
+ - SimpleDirectGraph permette cicli interni
+ 
+*************************** problema dei warning **************************************
+
+
+
+****************************** edge types *****************************************
+
+in JGraphT ci sono 2 tipi di Edges:
+-> DefaultEdge: quelli normalotti, che hanno solo il target ed il source
+-> DefaultWeightEdge: come quelli sopra, solo che hanno anche un loro relativo peso
+
+
+**************************CAMBIARE COLORE AI VERTEX**********************************
+	DefaultGraphCell cell = m_jgAdapter.getVertexCell( vertex );
+    Map  attr = cell.getAttributes(  );
+
+	GraphConstants.setBackground(attr, Color.green);
+        
+    Map cellAttr = new HashMap(  );
+    	cellAttr.put( cell, attr );
+        m_jgAdapter.edit( cellAttr, null, null, null );

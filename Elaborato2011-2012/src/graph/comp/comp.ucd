@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="comp" size="1064,631" id="graph.comp" metadata="uml2-1.0" initialized="true" scrolledY="207" tag="1000" key="32303037303533312D3130303020456C61626F7261746F323031312D323031322F70617472697A696F">
+  <children xsi:type="editmodel:ClassEditModel" name="Flow" location="654,45" size="103,103" id="graph.comp/Flow" runTimeClassModel="Flow(),getTarget(),getSource()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="80,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Flow" id="graph.comp/Flow#Flow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSource" id="graph.comp/Flow#getSource()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTarget" id="graph.comp/Flow#getTarget()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.4/@sourceConnections.1 //@children.2/@sourceConnections.1" name="Diagnosticable" location="765,360" size="136,43" id="graph.comp/Diagnosticable" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ActionNode" location="570,450" size="190,103" id="graph.comp/ActionNode" runTimeClassModel="dEFAULTACTIONCOLOR,ActionNode(Ljava.lang.String;),serialVersionUID,aCTIONNODENAME">
+    <children xsi:type="editmodel:CompartmentEditModel" size="167,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="aCTIONNODENAME" id="graph.comp/ActionNode#aCTIONNODENAME"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULTACTIONCOLOR" id="graph.comp/ActionNode#dEFAULTACTIONCOLOR"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="85,18">
+      <children xsi:type="editmodel:MethodEditModel" name="ActionNode" id="graph.comp/ActionNode#ActionNode(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="graph.comp/Node&lt;-graph.comp/ActionNode" source="//@children.2" target="//@children.5" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="13,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="117,211" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="graph.comp/Diagnosticable&lt;-graph.comp/ActionNode" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.1/@children.1" sourceEnd="//@children.2/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="190,74" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="70,43" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OutputNode" location="270,360" size="193,258" id="graph.comp/OutputNode" runTimeClassModel="graph.comp.OutputNode.ResultList,getResult(),dEFAULTOUTPUTCOLOR,oUTPUTNODENAME,setResult(Lgraph.comp.OutputNode.ResultList;),OutputNode(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="170,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULTOUTPUTCOLOR" id="graph.comp/OutputNode#dEFAULTOUTPUTCOLOR"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oUTPUTNODENAME" id="graph.comp/OutputNode#oUTPUTNODENAME"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getResult" id="graph.comp/OutputNode#getResult()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setResult" id="graph.comp/OutputNode#setResult(Lgraph.comp.OutputNode.ResultList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="OutputNode" id="graph.comp/OutputNode#OutputNode(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,109">
+      <children xsi:type="editmodel:EnumerationEditModel" targetConnections="//@children.3/@sourceConnections.0" name="ResultList" location="1498,833" size="103,107" id="graph.comp/OutputNode$ResultList" runTimeClassModel="KO%,OK%,OKM%">
+        <children xsi:type="editmodel:CompartmentEditModel" size="42,54">
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="KO" id="graph.comp/OutputNode$ResultList#KO%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="OK" id="graph.comp/OutputNode$ResultList#OK%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="OKM" id="graph.comp/OutputNode$ResultList#OKM%"/>
+        </children>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="graph.comp/OutputNode$ResultList@associatedResult+graph.comp/OutputNode@" source="//@children.3" target="//@children.3/@children.2/@children.0" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="193,247" id="graph.comp/OutputNode$ResultList@associatedResult+graph.comp/OutputNode@|graph.comp/OutputNode#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="associatedResult" location="0,62" id="graph.comp/OutputNode$ResultList@associatedResult+graph.comp/OutputNode@|graph.comp/OutputNode$ResultList#associatedResult" multiplicityLabel="//@children.3/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - associatedResult" location="180,542" size="93,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="255,570" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="graph.comp/Node&lt;-graph.comp/OutputNode" source="//@children.3" target="//@children.5" targetEnd="//@children.3/@sourceConnections.1/@children.1" sourceEnd="//@children.3/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="137,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="22,211" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="InputNode" location="615,210" size="181,103" id="graph.comp/InputNode" runTimeClassModel="InputNode(Ljava.lang.String;),dEFAULTINPUTCOLOR,iNPUTNODENAME">
+    <children xsi:type="editmodel:CompartmentEditModel" size="158,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULTINPUTCOLOR" id="graph.comp/InputNode#dEFAULTINPUTCOLOR"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="iNPUTNODENAME" id="graph.comp/InputNode#iNPUTNODENAME"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,18">
+      <children xsi:type="editmodel:MethodEditModel" name="InputNode" id="graph.comp/InputNode#InputNode(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="graph.comp/Node&lt;-graph.comp/InputNode" source="//@children.4" target="//@children.5" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,37" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="139,173" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="graph.comp/Diagnosticable&lt;-graph.comp/InputNode" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.1/@children.1" sourceEnd="//@children.4/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="181,49" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="71,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.3/@sourceConnections.1 //@children.6/@sourceConnections.0 //@children.2/@sourceConnections.0" name="Node" location="345,74" size="139,211" id="graph.comp/Node" runTimeClassModel="graphicRect,Node(Ljava.lang.String;),Node(),color,Node(Ljava.lang.String;Ljava.awt.Color;),name,getNodeType(),getNameColor(),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="color" id="graph.comp/Node#color"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="graphicRect" id="graph.comp/Node#graphicRect"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="graph.comp/Node#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,108">
+      <children xsi:type="editmodel:MethodEditModel" name="getNameColor" id="graph.comp/Node#getNameColor()"/>
+      <children xsi:type="editmodel:MethodEditModel" targetConnections="//@children.6/@sourceConnections.0" name="getNodeType" id="graph.comp/Node#getNodeType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="graph.comp/Node#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Node" id="graph.comp/Node#Node(Ljava.lang.String;Ljava.awt.Color;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Node" id="graph.comp/Node#Node()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Node" id="graph.comp/Node#Node(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" verticalGuide="//@boardSetting/@topRuler/@guides.0" name="ModelPanel" location="22,60" size="283,225" id="gui/ModelPanel" runTimeClassModel="colorNodes(Ljava.util.Set;),colorNode(Lgraph.comp.Node;),ModelPanel(Lgraph.Model;),ApplyAttributeToNode(Lgraph.comp.Node;Ljava.awt.Rectangle;),mouseWheelMoved(Ljava.awt.event.MouseWheelEvent;),jgraph,positionNodes(Ljava.util.Set;),jgraphAdapter,positionNode(Lgraph.comp.Node;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="260,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="jgraph" id="gui/ModelPanel#jgraph"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="jgraphAdapter" id="gui/ModelPanel#jgraphAdapter"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,126">
+      <children xsi:type="editmodel:MethodEditModel" name="ApplyAttributeToNode" id="gui/ModelPanel#ApplyAttributeToNode(Lgraph.comp.Node;Ljava.awt.Rectangle;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="colorNode" id="gui/ModelPanel#colorNode(Lgraph.comp.Node;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="positionNode" id="gui/ModelPanel#positionNode(Lgraph.comp.Node;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="positionNodes" id="gui/ModelPanel#positionNodes(Ljava.util.Set;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="colorNodes" id="gui/ModelPanel#colorNodes(Ljava.util.Set;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ModelPanel" id="gui/ModelPanel#ModelPanel(Lgraph.Model;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="mouseWheelMoved" id="gui/ModelPanel#mouseWheelMoved(Ljava.awt.event.MouseWheelEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="gui/ModelPanel-Standard::Call->graph.comp/Node*gui/ModelPanel-Soyatec::Import->graph.comp/Node" source="//@children.6" target="//@children.5" targetEnd="//@children.6/@sourceConnections.0/@children.2" label="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="283,139" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,125"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler>
+      <guides position="22">
+        <entries element="//@children.6" alignment="-1"/>
+      </guides>
+    </topRuler>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

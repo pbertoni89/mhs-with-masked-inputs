@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_IWQ5MC2cEeGhTqb1wpBo7w" name="model">
+  <ownedComment xmi:id="_oBU8wC2cEeGhTqb1wpBo7w">
+    <body>diagramma classi GUI</body>
+  </ownedComment>
+  <ownedComment xmi:id="_AAtQAC-rEeGASarG09I7bg">
+    <body>classe che gestisce il menu dell'applicazione.  In essa è contenuta la struttura gerarchica del menu.</body>
+  </ownedComment>
+  <ownedComment xmi:id="_fZLSQC-sEeGASarG09I7bg">
+    <body>la classe rappresenta il toolpanel dove risiedono tutti i pulsanti di modifica grafo</body>
+  </ownedComment>
+  <ownedComment xmi:id="_n0VgsC-sEeGASarG09I7bg">
+    <body>costituisce il pannello in cui risiede  il log dell'applicazione</body>
+  </ownedComment>
+  <ownedComment xmi:id="_-diiMC-sEeGASarG09I7bg">
+    <body>comprende tutti gli oracoli relativi alle uscite. Dotato di un scrollpane a est </body>
+  </ownedComment>
+  <ownedComment xmi:id="_U1L5oC-tEeGASarG09I7bg">
+    <body>comprende il pulsante ELABORA e il pannello che dice &quot;tutto ok&quot;, &quot;warning&quot; o (virtualmente) errore.</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SyJ-YC2eEeGhTqb1wpBo7w" name="Class0"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6_W2AS-qEeGASarG09I7bg" name="MainMenuBar">
+    <generalization xmi:id="_XajrUC-rEeGASarG09I7bg" general="_RHYdEC-rEeGASarG09I7bg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RHYdEC-rEeGASarG09I7bg" name="JMenuBar">
+    <generalization xmi:id="_T8u5kC-rEeGASarG09I7bg" general="_6_W2AS-qEeGASarG09I7bg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZTgxAC-rEeGASarG09I7bg" name="EditModelButtonPanel">
+    <generalization xmi:id="_bQgzwC-sEeGASarG09I7bg" general="_zSgCkC-rEeGASarG09I7bg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aR_ygC-rEeGASarG09I7bg" name="LogPanel">
+    <generalization xmi:id="_cNzicC-sEeGASarG09I7bg" general="_zSgCkC-rEeGASarG09I7bg"/>
+    <generalization xmi:id="_whVtEC-sEeGASarG09I7bg" general="_vXZpgC-sEeGASarG09I7bg"/>
+    <ownedAttribute xmi:id="_FfZ7EC-wEeGASarG09I7bg" name="gUIApplication" type="_CZ_CQC-wEeGASarG09I7bg" association="_FfjFAC-wEeGASarG09I7bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FfZ7ES-wEeGASarG09I7bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FfZ7Ei-wEeGASarG09I7bg" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_a3MKQC-rEeGASarG09I7bg" name="ElaborationPanel">
+    <generalization xmi:id="_c8X4oC-sEeGASarG09I7bg" general="_zSgCkC-rEeGASarG09I7bg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bYEpwC-rEeGASarG09I7bg" name="ObservationPanel">
+    <generalization xmi:id="_eNAaEC-sEeGASarG09I7bg" general="_zSgCkC-rEeGASarG09I7bg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zSgCkC-rEeGASarG09I7bg" name="JPanel">
+    <generalization xmi:id="_zSgCkS-rEeGASarG09I7bg" general="_6_W2AS-qEeGASarG09I7bg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vXZpgC-sEeGASarG09I7bg" name="JLabel"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CZ_CQC-wEeGASarG09I7bg" name="GUIApplication">
+    <ownedAttribute xmi:id="_P5nQIC-wEeGASarG09I7bg" name="mainMenuBar" type="_6_W2AS-qEeGASarG09I7bg" association="_P5nQIy-wEeGASarG09I7bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P5nQIS-wEeGASarG09I7bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P5nQIi-wEeGASarG09I7bg" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FfjFAC-wEeGASarG09I7bg" name="logPanel_gUIApplication_0" memberEnd="_FfjFAS-wEeGASarG09I7bg _FfZ7EC-wEeGASarG09I7bg">
+    <ownedEnd xmi:id="_FfjFAS-wEeGASarG09I7bg" name="logPanel" type="_aR_ygC-rEeGASarG09I7bg" association="_FfjFAC-wEeGASarG09I7bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FfjFAi-wEeGASarG09I7bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FfjFAy-wEeGASarG09I7bg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_P5nQIy-wEeGASarG09I7bg" name="gUIApplication_mainMenuBar_0" memberEnd="_P5nQJC-wEeGASarG09I7bg _P5nQIC-wEeGASarG09I7bg">
+    <ownedEnd xmi:id="_P5nQJC-wEeGASarG09I7bg" name="gUIApplication" type="_CZ_CQC-wEeGASarG09I7bg" association="_P5nQIy-wEeGASarG09I7bg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P5nQJS-wEeGASarG09I7bg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P5nQJi-wEeGASarG09I7bg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

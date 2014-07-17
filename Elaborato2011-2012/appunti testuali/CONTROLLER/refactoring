@@ -1,0 +1,70 @@
+**************************** CONTROLLER REFACTORING ******************************
+
+idee per il refactoring del controller:
+
+
+14 maggio
+
+1)togliere l'allocazione statica dei controller per cui ogni controller nel costruttore e' posizionale
+2)rimettere a posto buttonhandler controller
+3) ridenominare buttonAction e simili (nomi troppo ambigui)
+4) rimettere a posto la struttura di cablazione gui-controller
+5) in validateUserAction eliminare quei NewIstanceExceptio che btanto non capiterà mai inserendo appositi
+try-catch
+6) all'inizio la applicazione consente il deleteNode e il InsertFlow... non deve consentirlo!
+7) spostare le costante EDIT e IDLE da ButtonHanbdlerController a UserStateListener (ha piu' senso!)
+8) il disablebutton va eliminato???
+9) deleteNode se premi un punto in cui non c'e' un nodo da errore
+10) quando premo "insert X" non devo poter accedere al menu' file!
+11) fare in modo che newFileController non generi manualmente action,input,outpu node not found!
+12) il suono di errore funziona solo una volta... stiamo attenti!
+
+
+********************************* elenco del refactoring che ho fatto *********************************************
+
+1) nella prima versione dell'albero dei Controller essi venivano cablati con la GUI in modo posizionale nel costruttore:
+
+il costruttore della GUI richiedeva dei semplici "Controller" e poi associava ad ognuno di essi in modo POSIZIONALE l'oggetto
+da pilotare. Ho sostituito al costruttore della GUI una lista di Controller ognuno con il proprio tipo:
+
+da 
+	Controller,Controller,Controller,...
+a
+	NewFileController,OpenFileController,SaveFileController,...
+	
+2) ho creato il metodo wire(AbstractButton): questo metodo effettua il cablaggio tra un pulsante e il relativo Controller (addActionListener);
+inoltre il metodo imposta l'attributo "listenedButton": esso permette di ottenere dal Controller in maniera immediata il pulsante pilotato
+dal Controller stesso. In questo modo la leggibilità del codice aumenta
+3) i nomi dei metodi che miglioravano la compattezza del codice lungo tutto l'albero gerarchico dei Controller erano molto ambigui e poco
+comprensibili per tutti i programmatori che non avevano programmato direttamente l'albero. Abbiamo dunque sostituito
+quei nomi con nomi più chiari; per esempio:
+
+da
+	buttonaction(ActionEvent)
+a
+	actionOverseenPerformed(ActionEvent)
+	
+ovviamente i nomi dei metodi, senza una veloce lettura della JavaDoc, danno solo un'idea intuitiva dello scopo del metodo stesso
+
+4) ogni pulsante dell'applicazione inizia un particolare wizard, cioe' un percorso guidato con cui l'utente puo' eseguire una determinata
+azione. Il Wizard può concludersi anche dopo svariate azioni utente. Abbiamo inserito dunque uno stato dell'azione utente: essa può essere
+	--> idle: l'utente non sta seguendo alcun wizard
+	--> editing: l'utente sta seguendo dei wizard e quindi non deve essere distratto da altri eventi
+
+con l'introduzione di questo stato utente è stato possibile attivare/disattivare i pulsanti di inizio nuovo wizard per:
+	--> evitare efficaciemente che l'utente iniziasse un nuovo wizard mentre ne stava già compilando uno
+	--> migliorare la leggibilità del codice definendo metodi che definivano chiaramente quando un wizard veniva terminato
+	--> fare, rispetto a un metodo grosso, più metodi piccoli
+un esempio di questo è nella classe InsertFlowController: in essa, prima del refactoring, era presente un unico metodo mouseClicked che doveva
+gestire ogni possibile azione utente (rinuncia del wizard, aggiunta di un flow eccetera...); il metodo (grazie anche alla creazione
+di metodi ereditati dal padre) è stato diviso in più metodi piccoli come "leftClickOperations",,"rightClickOperations","exitSpecificOperations"
+5)abbiamo ritenuto necessario l'introduzione della possibilità che l'utente possa rinunciare a completare il wizard corrente.
+Prima del refactoring questa rinuncia avveniva secondo diversi modi a seconda del wizard; per esempio in InsertInputNode l'utente, per rinunciare,
+doveva chiudere la finestra di scelta nome mentre in InsertFlow doveva premere il destro mentre in DeleteNode doveva premere
+con il sinistro una porzione di spazio in cui non esisteva nessun nodo. Dopo il refactoring abbiamo standardizzato la rinuncia e cioé
+con il click destro del mouse. 
+6) dopo l'introduzione dello stato utente, abbiamo eliminato tutti quei metodi che impostavano TUTTI i pulsanti a attivi/disattivi (principalmente in ButtonHandlerController)
+in quanto la gestione dell'attivo/inattivo non doveva essere più nella classe padre del ButtonHandler, ma nelle singole classi figlie che
+controllano un pulsante specifico (l'attivazione/disattivazione di pulsanti come InsertFlow e ExecuteMinimalAnalysis infatti è molto diversa!)
+7)abbiamo tolto alcune implementazioni di interfacce che erano ridondanti: UserStateListener,ActionListener,ActionPerformerController erano implementate
+sia in AbstractButtonHandlerController che nella sua classe figlia, ButtonHandlerController
